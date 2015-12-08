@@ -9,16 +9,20 @@ $(document).ready(function() {
   $('#m1').click(function() {
     if (!stream) {
       playTrack('236619719');
+      console.log('PLAYING THE TRACK ON M');
     } else {
       pauseTrack(stream);
+      console.log('TRYING TO PAUSE THE TRACK ON M');
     };
   });
 
   $('#e').click(function() {
     if (!stream) {
       playTrack('158769517');
+      console.log('PLAYING THE TRACK ON E');
     } else {
       pauseTrack(stream);
+      console.log('TRYING TO PAUSE THE TRACK ON E');
     };
   });
 
@@ -32,6 +36,7 @@ $(document).ready(function() {
   var pauseTrack = function(stream) {
     stream.pause();
     stream = "";
+    // delete stream;
   };
 
 });
