@@ -4,31 +4,34 @@ $(document).ready(function() {
     client_id: 'aa7a4eb3979426038d8aa53a458baa54'
   })
   
-
   var stream;
 
   $('#m1').click(function() {
     if (!stream) {
-      SC.stream('/tracks/236619719').then(function(player) {
-        stream = player;
-        stream.play();
-      });
+      playTrack('236619719');
     } else {
-      stream.pause();
-      stream = "";
+      pauseTrack(stream);
     };
   });
-
 
   $('#e').click(function() {
     if (!stream) {
-      SC.stream('/tracks/158769517').then(function(player) {
-        stream = player;
-        stream.play();
-      });
+      playTrack('158769517');
     } else {
-      stream.pause();
-      stream = "";
+      pauseTrack(stream);
     };
   });
+
+  var playTrack = function(trackID) {
+    SC.stream('/tracks/' + trackID).then(function(player) {
+      stream = player;
+      stream.play();
+    });
+  };
+
+  var pauseTrack = function(stream) {
+    stream.pause();
+    stream = "";
+  };
+
 });
