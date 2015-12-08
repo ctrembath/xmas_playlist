@@ -1,0 +1,65 @@
+body {
+	background-color: #009373;
+}
+
+div{
+	text-align: center; 
+}
+
+.christmas {
+  margin-top: -3rem;
+}
+
+p {
+	font-size: 14rem;
+	font-family: 'Exo 2', sans-serif;
+	display: inline;
+}
+
+.xmas {
+	width :100%;
+	font-size: 11rem;
+}
+
+#m1, #m2, #i{
+	color: #B4E1FF;
+}
+
+#e, #t, #x {
+	color: #AB87FF;
+}
+
+#r1, #r2, #r3{
+	color: #F5FFC6;
+}
+
+#y, #a , #c{
+	color: #FFACE4;
+}
+
+#h, #s1, #s2  {
+	color : #C1FF9B;
+}
+
+.mobileChristmas {
+	display:none;
+}
+
+@media screen and (max-width: 800px) {
+
+	.mobileChristmas{
+		display: block;
+	}
+
+
+	.christmas {
+		display:none;
+	}
+	p {
+		font-size: 7rem;
+	}
+
+	.mobile {
+		font-size: 7rem;
+	}
+}
