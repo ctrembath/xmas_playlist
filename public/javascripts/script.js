@@ -4,30 +4,31 @@ $(document).ready(function() {
     client_id: 'aa7a4eb3979426038d8aa53a458baa54'
   })
   
-  var track1 = SC.stream('/tracks/236619719');
+
+  var stream;
 
   $('#m1').click(function() {
-    
-    if (track1.isPaused(player)) {
-      console.log('I know its paused');
-      track1.then(function(player) {
-        player.play();
+    if (!stream) {
+      SC.stream('/tracks/236619719').then(function(player) {
+        stream = player;
+        stream.play();
       });
-
     } else {
-
-      console.log('HIHIHIHIHI');
-      track1.then(function(player) {
-        player.pause();
-      });
-
+      stream.pause();
+      stream = "";
     };
-
   });
 
+
   $('#e').click(function() {
-    track1.then(function(player) {
-      player.pause();
-    });
+    if (!stream) {
+      SC.stream('/tracks/158769517').then(function(player) {
+        stream = player;
+        stream.play();
+      });
+    } else {
+      stream.pause();
+      stream = "";
+    };
   });
 });
