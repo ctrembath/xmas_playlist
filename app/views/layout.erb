@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="Description" content="No Mayo is a digital agency founded by two London-based, female web developers" />
+    <meta name="Keywords" content="Developers, Agency, Ruby on Rails, Ruby, JavaScripts, HTML5, CSS" />
+    <meta name="googlebot" content="NOODP">
+
+    <meta name="viewport" content="width=device-width" />
+
+    <meta http-equiv="Content-Language" content="en">
+
+    <title>XMAS PLAYLIST</title>
+    
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/script.css" />
+
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/foundation.js"></script>
+    <script src="javascripts/script.js"></script>
+    <script>
+      $(document).foundation();
+   </script>
+  </body>
+</html>
