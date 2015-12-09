@@ -3,40 +3,28 @@ $(document).ready(function() {
   SC.initialize({
     client_id: 'aa7a4eb3979426038d8aa53a458baa54'
   })
-  
-  var stream;
 
+  var stream;
+  
   $('#m1').click(function() {
-    if (!stream) {
-      playTrack('236619719');
-      console.log('PLAYING THE TRACK ON M');
-    } else {
-      pauseTrack(stream);
-      console.log('TRYING TO PAUSE THE TRACK ON M');
-    };
+    SC.stream('/tracks/236619719').then(function(player) {
+      stream = player
+      stream.play();
+      console.log(stream);
+    });
   });
 
   $('#e').click(function() {
-    if (!stream) {
-      playTrack('158769517');
-      console.log('PLAYING THE TRACK ON E');
-    } else {
-      pauseTrack(stream);
-      console.log('TRYING TO PAUSE THE TRACK ON E');
-    };
+    SC.stream('/tracks/158769517').then(function(player) {
+      stream = player
+      stream.play();
+      console.log(stream);
+    });
   });
 
-  var playTrack = function(trackID) {
-    SC.stream('/tracks/' + trackID).then(function(player) {
-      stream = player;
-      stream.play();
-    });
-  };
-
-  var pauseTrack = function(stream) {
-    stream.pause();
-    stream = "";
-    // delete stream;
-  };
-
+  $('#pause').click(function() {
+    if (stream) {
+      stream.pause();
+    };
+  });
 });
