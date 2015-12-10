@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 
   $('#e').click(function() {
-    playTrack('166026429');
+    playTrack('225425321');
   }); 
 
   $('#r1').click(function() {
@@ -21,8 +21,26 @@ $(document).ready(function() {
   $('#pause').click(function() {
     if (stream) {
       stream.pause();
+      showPlayButton();
     };
   });
+
+  $('#play').click(function() {
+    if (stream) {
+      stream.play();
+      showPauseButton();
+    }; 
+  });
+
+  var showPlayButton = function() {
+    $('#pause').css('display', 'none');
+    $('#play').css('display', 'block');
+  };
+
+  var showPauseButton = function() {
+    $('#play').css('display', 'none');
+    $('#pause').css('display', 'block');
+  };
 
   var playTrack = function(trackID) {
     SC.stream('/tracks/' + trackID).then(function(player) {

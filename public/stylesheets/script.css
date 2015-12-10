@@ -2,6 +2,10 @@ body {
 	background-color: #009373;
 }
 
+#play {
+	display: none;
+}
+
 div{
 	text-align: center; 
 }
