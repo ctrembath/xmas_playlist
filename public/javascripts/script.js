@@ -7,24 +7,27 @@ $(document).ready(function() {
   var stream;
   
   $('#m1').click(function() {
-    SC.stream('/tracks/236619719').then(function(player) {
-      stream = player
-      stream.play();
-      console.log(stream);
-    });
+    playTrack('229055409');
   });
 
   $('#e').click(function() {
-    SC.stream('/tracks/158769517').then(function(player) {
-      stream = player
-      stream.play();
-      console.log(stream);
-    });
-  });
+    playTrack('166026429');
+  }); 
+
+  $('#r1').click(function() {
+    playTrack('226404391');
+  }); 
 
   $('#pause').click(function() {
     if (stream) {
       stream.pause();
     };
   });
+
+  var playTrack = function(trackID) {
+    SC.stream('/tracks/' + trackID).then(function(player) {
+      stream = player
+      stream.play();
+    });
+  };
 });
