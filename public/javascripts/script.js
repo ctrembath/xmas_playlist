@@ -4,7 +4,22 @@ $(document).ready(function() {
     client_id: 'aa7a4eb3979426038d8aa53a458baa54'
   })
 
+  var is_playing = false
   var stream;
+
+  function player(trackId){
+    if( stream ) {
+        if(is_playing) {
+            stream.pause();
+            is_playing = false;
+        } else {
+            stream.play();
+            is_playing = true;
+        }
+    } else {
+      playTrack(trackId);
+    };
+  };
 
 
   $(".words").click(function(){
@@ -13,23 +28,23 @@ $(document).ready(function() {
   });
 
   $('#m1').click(function(){
-      playTrack('229055409');
+      player('229055409');
     });
 
   $('#e').click(function() {
-    playTrack('225425321');
+    player('225425321');
   }); 
 
   $('#r1').click(function() {
-    playTrack('226404391');
+    player('226404391');
   }); 
 
   $('#r2').click(function() {
-    playTrack('230917974');
+    player('230917974');
   }); 
 
     $('#y').click(function() {
-    playTrack('230917974');
+    player('230917974');
   }); 
 
       $('#c').click(function() {
@@ -44,7 +59,6 @@ $(document).ready(function() {
  $('#r3').click(function() {
     playTrack('235746920');
   }); 
-
 
  $('#i').click(function() {
     playTrack('235593121');
@@ -77,7 +91,7 @@ $(document).ready(function() {
     if (stream) {
       stream.pause();
       showPlayButton();
-    };
+    }
   });
 
   $('#play').click(function() {
@@ -101,6 +115,15 @@ $(document).ready(function() {
     SC.stream('/tracks/' + trackID).then(function(player) {
       stream = player
       stream.play();
+      is_playing = true;
     });
   };
+
+  var pauseTrack = function(trackID) {
+    SC.stream('/tracks/' + trackID).then(function(player) {
+      stream = player
+      stream.pause();
+    });
+  };
+
 });
