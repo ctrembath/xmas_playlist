@@ -15,16 +15,27 @@ $(document).ready(function() {
   // PLAY AND PAUSE 
 
   var playTrack = function(trackID) {
+    console.log(event.target.className.indexOf('playing'));
     SC.stream('/tracks/' + trackID).then(function(player) {
       stream = player
       stream.play();
     });
   };
 
-  var clickToPlay = function() {
+  var clickToPlayMerry = function() {
     var tune = event.target
     if (tune.className.indexOf('playing') === 6) {
-      track = tune.getAttribute("name");
+      var track = tune.getAttribute("name");
+      playTrack(track);
+    } else {
+      stream.pause();
+    };
+  };
+
+  var clickToPlayChristmas = function() {
+    var tune = event.target
+    if (tune.className.indexOf('playing') === 11) {
+      var track = tune.getAttribute("name");
       playTrack(track);
     } else {
       stream.pause();
@@ -34,58 +45,58 @@ $(document).ready(function() {
   // TRACK PLAYLIST
 
   $('#m1').click(function() {
-    clickToPlay();
+    clickToPlayMerry();
   });
 
   $('#e').click(function() {
-    clickToPlay();  
+    clickToPlayMerry();  
   }); 
 
   $('#r1').click(function() {
-    clickToPlay();
+    clickToPlayMerry();
   }); 
 
   $('#r2').click(function() {
-    clickToPlay();
+    clickToPlayMerry();
   }); 
 
   $('#y').click(function() {
-    clickToPlay();    
+    clickToPlayMerry();    
   }); 
 
   $('#c').click(function() {
-    playTrack('235758881');
+    clickToPlayChristmas();
   }); 
 
   $('#h').click(function() {
-    playTrack('225425321');
+    clickToPlayChristmas();
   }); 
 
   $('#r3').click(function() {
-    playTrack('235746920');
+    clickToPlayChristmas();
   }); 
 
   $('#i').click(function() {
-    playTrack('235593121');
+    clickToPlayChristmas();
   }); 
 
   $('#s1').click(function() {
-    playTrack('233317840');
+    clickToPlayChristmas();
   }); 
 
   $('#t').click(function() {
-    playTrack('233605980');
+    clickToPlayChristmas();
   }); 
 
   $('#m2').click(function() {
-    playTrack('214497089');
+    clickToPlayChristmas();
   }); 
 
   $('#a').click(function() {
-    playTrack('234865253');
+    clickToPlayChristmas();
   }); 
 
   $('#s2').click(function() {
-    playTrack('234322380');
+    clickToPlayChristmas();
   });
 });
