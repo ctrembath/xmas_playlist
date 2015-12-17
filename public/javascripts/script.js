@@ -38,35 +38,19 @@ $(document).ready(function() {
   });
 
   $('#e').click(function() {
-    if (this.className.indexOf('playing') === 6) {
-      playTrack('225425321');
-    } else {
-      stream.pause();
-    };  
+    clickToPlay();  
   }); 
 
   $('#r1').click(function() {
-    if (this.className.indexOf('playing') === 6) {
-      playTrack('226404391');
-    } else {
-      stream.pause();
-    };
+    clickToPlay();
   }); 
 
   $('#r2').click(function() {
-    if (this.className.indexOf('playing') === 6) {
-      playTrack('24895618');
-    } else {
-      stream.pause();
-    };  
+    clickToPlay();
   }); 
 
   $('#y').click(function() {
-    if (this.className.indexOf('playing') === 6) {
-      playTrack('230917974');
-    } else {
-      stream.pause();
-    };     
+    clickToPlay();    
   }); 
 
   $('#c').click(function() {
