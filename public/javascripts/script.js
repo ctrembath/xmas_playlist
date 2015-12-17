@@ -5,8 +5,6 @@ $(document).ready(function() {
     redirect_uri: 'http://localhost:9292/auth/soundcloud/callback'
   });
 
-  // TRACK PLAYLIST
-
   var stream;
 
   $(".words").click(function(){
@@ -14,24 +12,55 @@ $(document).ready(function() {
     $(this).toggleClass('playing'); 
   });
 
-  $('#m1').click(function(){
-      playTrack('229055409');
+  // PLAY AND PAUSE 
+
+  var playTrack = function(trackID) {
+    SC.stream('/tracks/' + trackID).then(function(player) {
+      stream = player
+      stream.play();
     });
+  };
+
+  // TRACK PLAYLIST
+
+  $('#m1').click(function(){
+    if (this.className.indexOf('playing') === 6) {
+      playTrack('229055409');
+    } else {
+      stream.pause();
+    };
+  });
 
   $('#e').click(function() {
-    playTrack('225425321');
+    if (this.className.indexOf('playing') === 6) {
+      playTrack('225425321');
+    } else {
+      stream.pause();
+    };  
   }); 
 
   $('#r1').click(function() {
-    playTrack('226404391');
+    if (this.className.indexOf('playing') === 6) {
+      playTrack('226404391');
+    } else {
+      stream.pause();
+    };
   }); 
 
   $('#r2').click(function() {
-    playTrack('230917974');
+    if (this.className.indexOf('playing') === 6) {
+      playTrack('24895618');
+    } else {
+      stream.pause();
+    };  
   }); 
 
   $('#y').click(function() {
-    playTrack('230917974');
+    if (this.className.indexOf('playing') === 6) {
+      playTrack('230917974');
+    } else {
+      stream.pause();
+    };     
   }); 
 
   $('#c').click(function() {
@@ -69,43 +98,4 @@ $(document).ready(function() {
   $('#s2').click(function() {
     playTrack('234322380');
   });
-
-  $('#pause').click(function() {
-    if (stream) {
-      stream.pause();
-      showPlayButton();
-    }
-  });
-
-  $('#play').click(function() {
-    if (stream) {
-      stream.play();
-      showPauseButton();
-    }; 
-  });
-
-  var showPlayButton = function() {
-    $('#pause').css('display', 'none');
-    $('#play').css('display', 'block');
-  };
-
-  var showPauseButton = function() {
-    $('#play').css('display', 'none');
-    $('#pause').css('display', 'block');
-  };
-
-  var playTrack = function(trackID) {
-    SC.stream('/tracks/' + trackID).then(function(player) {
-      stream = player
-      stream.play();
-      // is_playing = true;
-    });
-  };
-
-  var pauseTrack = function(trackID) {
-    SC.stream('/tracks/' + trackID).then(function(player) {
-      stream = player
-      stream.pause();
-    });
-  };
 });

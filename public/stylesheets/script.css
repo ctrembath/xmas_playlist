@@ -55,7 +55,9 @@ p:hover {
 }
 
 .playing {
-	color: #F78E69 !important;
+	text-shadow: #FDFFFC 0 0 60px, #41EAD4 5px 5px 20px;
+	filter: glow(color=#EEEE00,strength=3);
+
 }
 
 @media screen and (max-width: 950px) {
