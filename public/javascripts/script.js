@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
   SC.initialize({
-    client_id: 'aa7a4eb3979426038d8aa53a458baa54'
-  })
+    client_id: 'aa7a4eb3979426038d8aa53a458baa54',
+    redirect_uri: 'http://localhost:9292/auth/soundcloud/callback'
+  });
+
+  // TRACK PLAYLIST
 
   var stream;
   
@@ -16,7 +19,33 @@ $(document).ready(function() {
 
   $('#r1').click(function() {
     playTrack('226404391');
-  }); 
+  });
+
+  $('#r2').click(function() {
+    playTrack('235758881');
+  });
+
+  $('#y').click(function() {
+    playTrack('126479703'); // problem
+  });
+
+  $('#c').click(function() {
+    playTrack('230917974');
+  });
+
+  $('#h').click(function() {
+    playTrack('234865253');
+  });
+
+  $('#r3').click(function() {
+    playTrack('233605980');
+  });
+
+  $('#i').click(function() {
+    playTrack('210438530');
+  });
+
+  // PLAY AND PAUSE CONTROLS
 
   $('#pause').click(function() {
     if (stream) {
