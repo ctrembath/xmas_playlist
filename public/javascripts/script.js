@@ -4,22 +4,22 @@ $(document).ready(function() {
     client_id: 'aa7a4eb3979426038d8aa53a458baa54'
   })
 
-  var is_playing = false
+  // var is_playing = false
   var stream;
 
-  function player(trackId){
-    if( stream ) {
-        if(is_playing) {
-            stream.pause();
-            is_playing = false;
-        } else {
-            stream.play();
-            is_playing = true;
-        }
-    } else {
-      playTrack(trackId);
-    };
-  };
+  // function player(trackId){
+  //   if( stream ) {
+  //       if(is_playing) {
+  //           stream.pause();
+  //           is_playing = false;
+  //       } else {
+  //           stream.play();
+  //           is_playing = true;
+  //       }
+  //   } else {
+  //     playTrack(trackId);
+  //   };
+  // };
 
 
   $(".words").click(function(){
