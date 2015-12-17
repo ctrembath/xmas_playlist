@@ -21,14 +21,20 @@ $(document).ready(function() {
     });
   };
 
-  // TRACK PLAYLIST
-
-  $('#m1').click(function(){
-    if (this.className.indexOf('playing') === 6) {
-      playTrack('229055409');
+  var clickToPlay = function() {
+    var tune = event.target
+    if (tune.className.indexOf('playing') === 6) {
+      track = tune.getAttribute("name");
+      playTrack(track);
     } else {
       stream.pause();
     };
+  };
+
+  // TRACK PLAYLIST
+
+  $('#m1').click(function() {
+    clickToPlay();
   });
 
   $('#e').click(function() {
