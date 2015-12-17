@@ -54,6 +54,10 @@ p:hover {
 	display:none;
 }
 
+.playing {
+	color: #F78E69 !important;
+}
+
 @media screen and (max-width: 950px) {
 
 	.christmas {
