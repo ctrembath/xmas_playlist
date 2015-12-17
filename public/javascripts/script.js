@@ -68,8 +68,7 @@ $(document).ready(function() {
 
   $('#s2').click(function() {
     playTrack('234322380');
-  }); 
-
+  });
 
   $('#pause').click(function() {
     if (stream) {
@@ -99,7 +98,7 @@ $(document).ready(function() {
     SC.stream('/tracks/' + trackID).then(function(player) {
       stream = player
       stream.play();
-      is_playing = true;
+      // is_playing = true;
     });
   };
 
@@ -109,5 +108,4 @@ $(document).ready(function() {
       stream.pause();
     });
   };
-
 });
