@@ -86,7 +86,7 @@ p.nomayo {
 
 #green{
 	color: #75DBCD;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
 
 }
 
@@ -139,6 +139,20 @@ p#and {
 
 	.mobileChristmas{
 		display: block;
+	}
+
+	#juicey {
+		margin-top: 
+	letter-spacing: .6rem;
+}
+
+	.thankyou {
+		margin: 0 !important;
+	}
+	.Logo {
+		height:3rem;
+			margin-bottom: .2rem;
+
 	}
 
 	.christmas {
