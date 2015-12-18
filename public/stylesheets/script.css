@@ -42,7 +42,7 @@ p:hover {
 	font-size: 11rem;
 }
 
-#m1, #m2, #i{
+#m1, #m2, #i, #m3{
 	color: #B4E1FF;
 }
 
@@ -50,11 +50,11 @@ p:hover {
 	color: #AB87FF;
 }
 
-#r1, #r2, #r3{
+#r1, #r2, #r3, #a2{
 	color: #F5FFC6;
 }
 
-#y, #a , #c{
+#y, #a , #c, #s3{
 	color: #FFACE4;
 }
 
@@ -130,12 +130,12 @@ p#and {
 
 @media screen and (max-width: 950px) {
 
-	.christmas {
+	.xmas {
 		font-size: 9rem;
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
 
 	.mobileChristmas{
 		display: block;
