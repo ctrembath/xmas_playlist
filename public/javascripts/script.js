@@ -25,7 +25,7 @@ $(document).ready(function() {
   };
 
   var clickToPlayMerry = function(trackName) {
-    var tune = event.target
+    var tune = event.target;
     var infoBanner = document.getElementById('artist-info');
     if (tune.className.indexOf('playing') === 6) {
       var track = tune.getAttribute("name");
@@ -38,9 +38,22 @@ $(document).ready(function() {
   };
 
   var clickToPlayChristmas = function(trackName) {
-    var tune = event.target
+    var tune = event.target;
     var infoBanner = document.getElementById('artist-info');
     if (tune.className.indexOf('playing') === 11) {
+      var track = tune.getAttribute("name");
+      playTrack(track);
+      infoBanner.innerHTML = trackName;
+    } else {
+      stream.pause();
+      infoBanner.innerHTML = "";
+    };
+  };
+
+  var clickToPlayXmas = function(trackName) {
+    var tune = event.target;
+    var infoBanner = document.getElementById('artist-info');
+    if (tune.className.indexOf('playing') === 18) {
       var track = tune.getAttribute("name");
       playTrack(track);
       infoBanner.innerHTML = trackName;
@@ -106,5 +119,21 @@ $(document).ready(function() {
 
   $('#s2').click(function() {
     clickToPlayChristmas('Marcus Marr & Chet Faker - Birthday Card');
+  });
+
+  $('#x').click(function() {
+    clickToPlayXmas('Joe Hertz - Ashes Ft LIV');
+  });
+
+  $('#m3').click(function() {
+    clickToPlayXmas('Ray BLK - 50/50');
+  });  
+
+  $('#a2').click(function() {
+    clickToPlayXmas('Menage a Trois - Ocean Boy');
+  });
+
+  $('#s3').click(function() {
+    clickToPlayXmas('Marcus Marr & Chet Faker - Birthday Card');
   });
 });
