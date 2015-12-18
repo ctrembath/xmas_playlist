@@ -146,7 +146,7 @@ $(document).ready(function() {
     clickToPlayXmas('Marcus Marr & Chet Faker - Birthday Card', 'm1');
   });
 
-
+  // PLAY INSTRUCTIONS
 
   $('.infoButton').click(function(){
     $('#cover').show();
