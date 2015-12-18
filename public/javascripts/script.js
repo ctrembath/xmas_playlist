@@ -89,7 +89,7 @@ $(document).ready(function() {
   }); 
 
   $('#h').click(function() {
-    clickToPlayChristmas('Menage a Trois - Ocean Boy');
+    clickToPlayChristmas('Ménage à Trois - Ocean Boy');
   }); 
 
   $('#r3').click(function() {

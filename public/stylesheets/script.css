@@ -1,24 +1,17 @@
-@import "compass/css3";
-
-@include keyframes(bounce) {
-	0%, 20%, 50%, 80%, 100% {
-    @include transform(translateY(0));
-  }
-	40% {
-    @include transform(translateY(-30px));
-  }
-	60% {
-    @include transform(translateY(-15px));
-  }
-}
-
-
 body {
 	background-color: #009373;
 }
 
+#artist-info {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.5rem;
+	color: #85FCC1;
+	text-shadow: #1F487E 0 0 10px, #000000 1px 1px 7px;
+
+}
+
 .merry {
-	margin-top: -1.5rem !important;
+	margin-top: -2.5rem !important;
 }
 
 #play {
@@ -33,7 +26,7 @@ div{
   margin-top: -4rem !important;
 }
 
-p {
+p.words {
 	font-size: 14rem;
 	font-family: 'Exo 2', sans-serif;
 	display: inline;
@@ -49,7 +42,7 @@ p:hover {
 	font-size: 11rem;
 }
 
-#m1, #m2, #i{
+#m1, #m2, #i, #m3{
 	color: #B4E1FF;
 }
 
@@ -57,11 +50,11 @@ p:hover {
 	color: #AB87FF;
 }
 
-#r1, #r2, #r3{
+#r1, #r2, #r3, #a2{
 	color: #F5FFC6;
 }
 
-#y, #a , #c{
+#y, #a , #c, #s3{
 	color: #FFACE4;
 }
 
@@ -93,7 +86,7 @@ p.nomayo {
 
 #green{
 	color: #75DBCD;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
 
 }
 
@@ -101,6 +94,7 @@ a.companyLinks{
 	text-decoration: none;
 	color: black;
 	font-family: 'Roboto', sans-serif;
+	text-shadow: #1F487E 0 0 10px;
 }
 
 .Logo {
@@ -111,6 +105,8 @@ a.companyLinks{
 p#and {
 	font-size: 1rem;
 	color: #FA8334;
+	font-family: 'Exo 2', sans-serif;
+	display: inline;
 }
 
 #juicey {
@@ -137,15 +133,29 @@ p#and {
 
 @media screen and (max-width: 950px) {
 
-	.christmas {
+	.xmas {
 		font-size: 9rem;
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
 
 	.mobileChristmas{
 		display: block;
+	}
+
+	#juicey {
+		margin-top: 
+	letter-spacing: .6rem;
+}
+
+	.thankyou {
+		margin: 0 !important;
+	}
+	.Logo {
+		height:3rem;
+			margin-bottom: .2rem;
+
 	}
 
 	.christmas {
