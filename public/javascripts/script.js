@@ -14,14 +14,6 @@ $(document).ready(function() {
     $(this).toggleClass('playing'); 
   });
 
-  // DISPLAY ARTIST INFO
-
-  var infoBanner = document.getElementById('artist-info');
-  
-  // var displayInfo = function(trackName) {
-  //   infoBanner.innerHTML = trackName;
-  // };
-
   // PLAY AND PAUSE 
 
   var playTrack = function(trackID) {
@@ -34,22 +26,27 @@ $(document).ready(function() {
 
   var clickToPlayMerry = function(trackName) {
     var tune = event.target
+    var infoBanner = document.getElementById('artist-info');
     if (tune.className.indexOf('playing') === 6) {
       var track = tune.getAttribute("name");
       playTrack(track);
       infoBanner.innerHTML = trackName;
     } else {
       stream.pause();
+      infoBanner.innerHTML = "";
     };
   };
 
-  var clickToPlayChristmas = function() {
+  var clickToPlayChristmas = function(trackName) {
     var tune = event.target
+    var infoBanner = document.getElementById('artist-info');
     if (tune.className.indexOf('playing') === 11) {
       var track = tune.getAttribute("name");
       playTrack(track);
+      infoBanner.innerHTML = trackName;
     } else {
       stream.pause();
+      infoBanner.innerHTML = "";
     };
   };
 
@@ -57,58 +54,57 @@ $(document).ready(function() {
 
   $('#m1').click(function() {
     clickToPlayMerry('Couros - Turning');
-    // displayInfo('Couros - Turning');
   });
 
   $('#e').click(function() {
-    clickToPlayMerry();
-  }); 
+    clickToPlayMerry('DREWXHILL - Struggle');
+  });
 
   $('#r1').click(function() {
-    clickToPlayMerry();
+    clickToPlayMerry('Camel Power Club - Ourson');
   }); 
 
   $('#r2').click(function() {
-    clickToPlayMerry();
+    clickToPlayMerry('Club Kuru - Layla');
   }); 
 
   $('#y').click(function() {
-    clickToPlayMerry();    
+    clickToPlayMerry('Luke Mahony Hammond - DRIFT');    
   }); 
 
   $('#c').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Ray BLK - 50/50');
   }); 
 
   $('#h').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Menage a Trois - Ocean Boy');
   }); 
 
   $('#r3').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Lovebirds ft. Stee Downes - Want You In My Soul');
   }); 
 
   $('#i').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Majid Jordan - Something About You');
   }); 
 
   $('#s1').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('LOYAL - Blue and the Green');
   }); 
 
   $('#t').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Joe Hertz - Ashes Ft LIV');
   }); 
 
   $('#m2').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('MagnetronMusic - Love Invaders');
   }); 
 
   $('#a').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Chrome Sparks - Moonraker');
   }); 
 
   $('#s2').click(function() {
-    clickToPlayChristmas();
+    clickToPlayChristmas('Marcus Marr & Chet Faker - Birthday Card');
   });
 });
