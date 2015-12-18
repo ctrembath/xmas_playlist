@@ -2,6 +2,10 @@ body {
 	background-color: #009373;
 }
 
+.merry {
+	margin-top: -1.5rem !important;
+}
+
 #play {
 	display: none;
 }
@@ -11,7 +15,7 @@ div{
 }
 
 .christmas {
-  margin-top: -3rem;
+  margin-top: -4rem !important;
 }
 
 p {
@@ -60,19 +64,56 @@ p:hover {
 
 }
 
+.thankyou {
+	position:fixed;
+	bottom:0px;
+	height:7.5rem;
+	width:100% !important;
+}
+
 p.nomayo {
 	font-size: 1.5rem;
+	color:#FFB17A;
 }
 
-a.nomayoLink{
+#green{
+	color: #75DBCD;
+  letter-spacing: 0.3rem;
+
+}
+
+a.companyLinks{
 	text-decoration: none;
 	color: black;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
-.NoMayoLogo {
+.Logo {
 	height: 4rem;
 	margin-bottom: 2rem;
+}
+
+p#and {
+	font-size: 1rem;
+	color: #FA8334;
+}
+
+#juicey {
+	letter-spacing: .4rem;
+}
+
+
+#nomayologo {
+	-webkit-animation:spin 4s linear infinite;
+	-moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#pineapple {
+	transition: all 500ms ease; 
 }
 
 @media screen and (max-width: 950px) {
