@@ -60,6 +60,21 @@ p:hover {
 
 }
 
+p.nomayo {
+	font-size: 1.5rem;
+}
+
+a.nomayoLink{
+	text-decoration: none;
+	color: black;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.NoMayoLogo {
+	height: 4rem;
+	margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 950px) {
 
 	.christmas {
