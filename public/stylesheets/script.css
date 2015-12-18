@@ -5,9 +5,15 @@ body {
 #artist-info {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 1.5rem;
-	color: #85FCC1;
-	text-shadow: #1F487E 0 0 10px, #000000 1px 1px 7px;
+	font-weight: 200;
+	color: #00203A;
+	letter-spacing: .2rem;
+	text-shadow: #1F487E 0 0 10px, #ffffff 1px 1px 7px;
 
+}
+
+.marqueeRow {
+	height:2rem;
 }
 
 .merry {
