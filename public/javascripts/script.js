@@ -7,10 +7,19 @@ $(document).ready(function() {
 
   var stream;
 
+  // MAKES LETTER GLOW IF TRACK IS PLAYING
+
   $(".words").click(function(){
     $('.words').not(this).removeClass('playing');
     $(this).toggleClass('playing'); 
   });
+
+  // DISPLAY ARTIST INFO
+
+  var infoBanner = document.getElementById('artist-info');
+  var displayInfo = function(trackName) {
+    infoBanner.innerHTML = trackName;
+  };
 
   // PLAY AND PAUSE 
 
@@ -20,9 +29,10 @@ $(document).ready(function() {
       stream = player
       stream.play();
     });
+    console.log(stream);
   };
 
-  var clickToPlayMerry = function() {
+  var clickToPlayMerry = function(trackTitle) {
     var tune = event.target
     if (tune.className.indexOf('playing') === 6) {
       var track = tune.getAttribute("name");
@@ -46,6 +56,7 @@ $(document).ready(function() {
 
   $('#m1').click(function() {
     clickToPlayMerry();
+    // displayInfo();
   });
 
   $('#e').click(function() {
