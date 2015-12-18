@@ -17,9 +17,10 @@ $(document).ready(function() {
   // DISPLAY ARTIST INFO
 
   var infoBanner = document.getElementById('artist-info');
-  var displayInfo = function(trackName) {
-    infoBanner.innerHTML = trackName;
-  };
+  
+  // var displayInfo = function(trackName) {
+  //   infoBanner.innerHTML = trackName;
+  // };
 
   // PLAY AND PAUSE 
 
@@ -29,14 +30,14 @@ $(document).ready(function() {
       stream = player
       stream.play();
     });
-    console.log(stream);
   };
 
-  var clickToPlayMerry = function(trackTitle) {
+  var clickToPlayMerry = function(trackName) {
     var tune = event.target
     if (tune.className.indexOf('playing') === 6) {
       var track = tune.getAttribute("name");
       playTrack(track);
+      infoBanner.innerHTML = trackName;
     } else {
       stream.pause();
     };
@@ -55,12 +56,12 @@ $(document).ready(function() {
   // TRACK PLAYLIST
 
   $('#m1').click(function() {
-    clickToPlayMerry();
-    // displayInfo();
+    clickToPlayMerry('Couros - Turning');
+    // displayInfo('Couros - Turning');
   });
 
   $('#e').click(function() {
-    clickToPlayMerry();  
+    clickToPlayMerry();
   }); 
 
   $('#r1').click(function() {
