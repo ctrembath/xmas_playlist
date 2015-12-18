@@ -16,21 +16,10 @@ $(document).ready(function() {
 
   // PLAY AND PAUSE 
 
-  // if (stream) {
-  //   stream.addEventListener('onMediaEnd', function(stream, data) {
-  //     console.log('track finished!');
-  //   });
-  // } else {
-  //   console.log('no idea');
-  // };
-
   var playTrack = function(trackID) {
     SC.stream('/tracks/' + trackID).then(function(player) {
       stream = player
       stream.play();
-      stream.onfinish(function() {
-        console.log('FINISHED');
-      });
     });
   };
 
