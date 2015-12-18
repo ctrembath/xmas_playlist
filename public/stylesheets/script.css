@@ -2,8 +2,16 @@ body {
 	background-color: #009373;
 }
 
+#artist-info {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 2rem;
+	color: #85FCC1;
+	text-shadow: #1F487E 0 0 10px, #247BA0 3px 3px 10px;
+
+}
+
 .merry {
-	margin-top: -1.5rem !important;
+	margin-top: -2.5rem !important;
 }
 
 #play {
