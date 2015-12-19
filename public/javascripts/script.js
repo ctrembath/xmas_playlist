@@ -29,7 +29,6 @@ $(document).ready(function() {
       stream = player
       stream.play();
       stream.onfinish(function() {
-        console.log('FINISHED');
       });
     });
   };
@@ -92,7 +91,7 @@ $(document).ready(function() {
   }); 
 
   $('#y').click(function() {
-    clickToPlayMerry('Luke Mahony Hammond - DRIFT');    
+    clickToPlayMerry('Luke M Hammond - DRIFT');    
   }); 
 
   $('#c').click(function() {
