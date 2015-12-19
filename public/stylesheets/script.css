@@ -161,10 +161,18 @@ p#and {
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1230px) {
 
 	.xmas {
-		font-size: 9rem !important;
+		font-size: 12rem !important;
+	}
+}
+
+
+@media screen and (max-width: 1140px) {
+
+	.xmas {
+		font-size: 8rem !important;
 	}
 }
 
