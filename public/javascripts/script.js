@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   var playTrack = function(trackID, x) {
     var next = x;
-    SC.stream('/tracks/' + trackID).then(function(player) {
+    SC.stream('/tracks/' + trackID, {useHTML4Audio : true, preferFlash : false}).then(function(player) {
       stream = player
       stream.play();
       endTrack(stream, x);
