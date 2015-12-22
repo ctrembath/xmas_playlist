@@ -8,7 +8,7 @@ body {
 	font-weight: 200;
 	color: #FF523F;
 	letter-spacing: .2rem;
-	text-shadow: #eeeeee 0 0 10px, #ffffff 1px 1px 7px;
+	text-shadow:#ffffff 1px 1px 7px;
 }
 
 .infoButton {
