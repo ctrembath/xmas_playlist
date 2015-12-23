@@ -1,14 +1,14 @@
 body {
-	background-color: #009373;
+	background-color: #04002D;
 }
 
 #artist-info {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 200;
-	color: #00203A;
+	color: #FF523F;
 	letter-spacing: .2rem;
-	text-shadow: #1F487E 0 0 10px, #ffffff 1px 1px 7px;
+	text-shadow:#ffffff 1px 1px 7px;
 }
 
 .infoButton {
@@ -73,23 +73,23 @@ p:hover {
 }
 
 #m1, #m2, #i, #m3{
-	color: #B4E1FF;
+	color: #ff6650;
 }
 
 #e, #t, #x {
-	color: #AB87FF;
+	color: #00e1ba;
 }
 
 #r1, #r2, #r3, #a2{
-	color: #F5FFC6;
+	color: #ffcd7a;
 }
 
 #y, #a , #c, #s3{
-	color: #FFACE4;
+	color: #F56476;
 }
 
 #h, #s1, #s2  {
-	color : #C1FF9B;
+	color : #ff9454;
 }
 
 .mobileChristmas {
@@ -122,7 +122,7 @@ p.nomayo {
 
 a.companyLinks{
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 	text-shadow: #1F487E 0 0 10px;
 }
