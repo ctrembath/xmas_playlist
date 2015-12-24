@@ -201,6 +201,10 @@ p#and {
 		display: none;
 	}
 
+	.infoButton {
+		display: none;
+	}
+
 	.merry {
 		margin-top: -.5rem !important;
 		width: 100%;
