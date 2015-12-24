@@ -11,6 +11,16 @@ body {
 	text-shadow:#ffffff 1px 1px 7px;
 }
 
+#mobile-notification {
+	display: none;
+	font-family: 'Exo 2', sans-serif;
+	font-size: .9rem;
+	font-weight: 200;
+	color: #FF523F;
+	letter-spacing: .2rem;
+	text-shadow:#ffffff 1px 1px 7px;
+}
+
 .infoButton {
 	height: 2rem;
 	float: right;
@@ -182,12 +192,25 @@ p#and {
 		display: block;
 	}
 
+	#mobile-notification {
+		display: block;
+		margin-top: 1rem;
+	}
+
+	#artist-info {
+		display: none;
+	}
+
+	.infoButton {
+		display: none;
+	}
+
 	.merry {
 		margin-top: -.5rem !important;
 		width: 100%;
 		text-align: center;
 		clear: both;
-}
+	}
 
 	.infoButton{
 		margin-top: -1rem;
@@ -199,11 +222,12 @@ p#and {
 
 	#juicey {
 		letter-spacing: .6rem;
-}
+	}
 
 	.thankyou {
 		margin: 0 !important;
 	}
+
 	.Logo {
 		height:3rem;
 		margin-bottom: .2rem;
