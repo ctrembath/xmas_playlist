@@ -26,8 +26,11 @@ $(document).ready(function() {
   };
 
   var endTrack = function(stream, letterID) {
+    console.log(letterID);
     stream.on("finish", function() {
+      console.log('track finished');
       var nextTrack = document.getElementById(letterID);
+      console.log(nextTrack);
       nextTrack.click();
     });
   };
