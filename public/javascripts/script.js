@@ -75,9 +75,9 @@ $(document).ready(function() {
 
   // TRACK PLAYLIST
 
-  // $('#m1').click(function() {
-  //   clickToPlayMerry('Couros - Turning', 'e');
-  // });
+  $('#m1').click(function() {
+    clickToPlayMerry('Couros - Turning', 'e');
+  });
 
   $('#e').click(function() {
     clickToPlayMerry('DREWXHILL - Struggle', 'r1');
