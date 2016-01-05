@@ -12,14 +12,17 @@ $(document).ready(function() {
   var createToPlay = function() {
     var mySound = soundManager.createSound({
       id: 'testingSoundID',
+      autoLoad: true,
       // url: 'https://api.soundcloud.com/tracks/233605980?client_id=aa7a4eb3979426038d8aa53a458baa54'
       url: '../assets/Gramatik.mp3'
     });
     console.log(mySound);
     console.log(mySound.url);
-    console.log(mySound.duration);
-    soundManager.play('testingSoundID', '../assets/Gramatik.mp3');
-    // mySound.play();
+    console.log(mySound.duration); // shows null until loading has started
+    $('#m1').click(function() {
+      soundManager.play('testingSoundID', '../assets/Gramatik.mp3');
+    });
+    // soundManager.play('testingSoundID', 'https://api.soundcloud.com/tracks/233605980?client_id=aa7a4eb3979426038d8aa53a458baa54');
   };
 
 });
