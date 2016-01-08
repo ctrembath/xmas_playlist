@@ -14,15 +14,13 @@ $(document).ready(function() {
 
       soundmanagerCreate('track1', streamURL);
 
-      $('#m1').click(function() {
-        soundManager.play('track1');
-      });
+      soundmanagerPlay('m1', 'track1')
     }
   });
 
   var initializeSoundcloud = function() {
     SC.initialize({
-      client_id: 'aa7a4eb3979426038d8aa53a458baa54'
+      client_id: soundcloudClientID
     });
   };
 
@@ -34,6 +32,12 @@ $(document).ready(function() {
     soundManager.createSound({
       id: trackID,
       url: trackURL
+    });
+  };
+
+  var soundmanagerPlay = function(letterID, trackID) {
+    $('#' + letterID).click(function() {
+      soundManager.play(trackID);
     });
   };
 });
