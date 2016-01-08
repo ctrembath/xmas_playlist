@@ -3,6 +3,7 @@ $(document).ready(function() {
   var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
 
   soundManager.setup({
+    
     url: './swf',
     flashVersion: 9,
 
@@ -10,12 +11,23 @@ $(document).ready(function() {
       
       initializeSoundcloud();
 
-      var streamURL = getURL('233605980');
+      letterM();
 
-      soundmanagerCreate('track1', streamURL);
+      // Change method so play starts when the letter is clicked on
+      // NOT the click event hidden in a play method
 
-      soundmanagerPlay('m1', 'track1')
-    }
+      // $('#m1').click(function() {
+
+      // });
+
+      // var streamURL = getURL('226404391');
+
+      // soundmanagerCreate('track1', streamURL);
+
+      // soundmanagerPlay('m1', 'track1');
+
+    },
+
   });
 
   var initializeSoundcloud = function() {
@@ -37,7 +49,18 @@ $(document).ready(function() {
 
   var soundmanagerPlay = function(letterID, trackID) {
     $('#' + letterID).click(function() {
-      soundManager.play(trackID);
+      soundManager.play(trackID, {
+        onfinish: function() {
+          console.log('&& TRACK FINISHED &&');
+        }
+      });
     });
   };
+
+  var letterM = function() {
+    var streamURL = getURL('233605980');
+    soundmanagerCreate('track1', streamURL);
+    soundmanagerPlay('m1', 'track1');
+  };
+
 });
