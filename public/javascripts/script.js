@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   var playTrack = function(trackID, x) {
     var next = x;
-    SC.stream('/tracks/' + trackID, {useHTML4Audio : true, preferFlash : false}).then(function(player) {
+    SC.stream('/tracks/' + trackID).then(function(player) {
       stream = player
       stream.play();
       endTrack(stream, x);
@@ -26,12 +26,13 @@ $(document).ready(function() {
   };
 
   var endTrack = function(stream, letterID) {
-    console.log(letterID);
     stream.on("finish", function() {
       var nextTrack = document.getElementById(letterID);
       nextTrack.click();
     });
   };
+
+  // Play through Merry letters
 
   var clickToPlayMerry = function(trackName, letterID) {
     var tune = event.target;
@@ -47,6 +48,8 @@ $(document).ready(function() {
     };
   };
 
+  // Play through Christmas
+
   var clickToPlayChristmas = function(trackName) {
     var tune = event.target;
     var infoBanner = document.getElementById('artist-info');
@@ -59,6 +62,8 @@ $(document).ready(function() {
       infoBanner.innerHTML = "";
     };
   };
+
+  // Play through Xmas
 
   var clickToPlayXmas = function(trackName) {
     var tune = event.target;
@@ -75,9 +80,9 @@ $(document).ready(function() {
 
   // TRACK PLAYLIST
 
-  $('#m1').click(function() {
-    clickToPlayMerry('Couros - Turning', 'e');
-  });
+  // $('#m1').click(function() {
+  //   clickToPlayMerry('Couros - Turning', 'e');
+  // });
 
   $('#e').click(function() {
     clickToPlayMerry('DREWXHILL - Struggle', 'r1');
