@@ -80,26 +80,6 @@ $(document).ready(function() {
 
   // TRACK PLAYLIST
 
-  // $('#m1').click(function() {
-  //   clickToPlayMerry('Couros - Turning', 'e');
-  // });
-
-  // $('#e').click(function() {
-  //   clickToPlayMerry('DREWXHILL - Struggle', 'r1');
-  // });
-
-  $('#r1').click(function() {
-    clickToPlayMerry('Camel Power Club - Ourson', 'r2');
-  }); 
-
-  $('#r2').click(function() {
-    clickToPlayMerry('Club Kuru - Layla', 'y');
-  }); 
-
-  $('#y').click(function() {
-    clickToPlayMerry('Luke Mahony Hammond - DRIFT', 'c');    
-  }); 
-
   $('#c').click(function() {
     clickToPlayChristmas('Ray BLK - 50/50', 'h');
   }); 
