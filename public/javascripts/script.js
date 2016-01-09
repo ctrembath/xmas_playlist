@@ -63,21 +63,6 @@ $(document).ready(function() {
     };
   };
 
-  // Play through Xmas
-
-  var clickToPlayXmas = function(trackName) {
-    var tune = event.target;
-    var infoBanner = document.getElementById('artist-info');
-    if (tune.className.indexOf('playing') === 18) {
-      var track = tune.getAttribute("name");
-      playTrack(track);
-      infoBanner.innerHTML = trackName;
-    } else {
-      stream.pause();
-      infoBanner.innerHTML = "";
-    };
-  };
-
   // TRACK PLAYLIST
 
   $('#c').click(function() {
@@ -116,21 +101,6 @@ $(document).ready(function() {
     clickToPlayChristmas('Marcus Marr & Chet Faker - Birthday Card', 'm1');
   });
 
-  $('#x').click(function() {
-    clickToPlayXmas('Joe Hertz - Ashes Ft LIV', 'm3');
-  });
-
-  $('#m3').click(function() {
-    clickToPlayXmas('Ray BLK - 50/50', 'a2');
-  });  
-
-  $('#a2').click(function() {
-    clickToPlayXmas('Menage a Trois - Ocean Boy', 's3');
-  });
-
-  $('#s3').click(function() {
-    clickToPlayXmas('Marcus Marr & Chet Faker - Birthday Card', 'm1');
-  });
 
   // PLAY INSTRUCTIONS
 

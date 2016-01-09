@@ -46,6 +46,34 @@ $(document).ready(function() {
         playMerry(tune, 'track5', 'Luke Mahony Hammond - DRIFT');
       });
 
+      $('#x').click(function() {
+        var streamURL = getURL('208738257');
+        var tune = event.target;
+        soundmanagerCreate('track15', streamURL);
+        playXMAS(tune, 'track15', 'Joe Hertz - Ashes Ft LIV', 'm3');
+      });
+
+      $('#m3').click(function() {
+        var streamURL = getURL('235758881');
+        var tune = event.target;
+        soundmanagerCreate('track16', streamURL);
+        playXMAS(tune, 'track16', 'Ray BLK - 50/50', 'a2');
+      });
+
+      $('#a2').click(function() {
+        var streamURL = getURL('187929420');
+        var tune = event.target;
+        soundmanagerCreate('track17', streamURL);
+        playXMAS(tune, 'track17', 'Menage a Trois - Ocean Boy', 's3');
+      });
+
+      $('#s3').click(function() {
+        var streamURL = getURL('234865253');
+        var tune = event.target;
+        soundmanagerCreate('track18', streamURL);
+        playXMAS(tune, 'track18', 'Marcus Marr & Chet Faker - Birthday Card', 'm1');
+      });
+
     },
 
   });
@@ -101,17 +129,17 @@ $(document).ready(function() {
     };
   };
 
-  // Play and pause tracks in CHRISTMAS
+  // Play and pause tracks in XMAS
 
-  // var playChristmas = function(tune, soundmanagerTrackID, TrackInfo) {
-  //   if (tune.className.indexOf('playing') === 11) {
-  //     soundmanagerPlay(soundmanagerTrackID);
-  //     displayTrackInfo(TrackInfo);
-  //   } else {
-  //     soundManager.pause(soundmanagerTrackID);
-  //     displayTrackInfo('');
-  //   };
-  // };
+  var playXMAS = function(tune, soundmanagerTrackID, TrackInfo) {
+    if (tune.className.indexOf('playing') === 18) {
+      soundmanagerPlay(soundmanagerTrackID);
+      displayTrackInfo(TrackInfo);
+    } else {
+      soundManager.pause(soundmanagerTrackID);
+      displayTrackInfo('');
+    };
+  };
 
 });
 
