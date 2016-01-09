@@ -84,9 +84,9 @@ $(document).ready(function() {
   //   clickToPlayMerry('Couros - Turning', 'e');
   // });
 
-  $('#e').click(function() {
-    clickToPlayMerry('DREWXHILL - Struggle', 'r1');
-  });
+  // $('#e').click(function() {
+  //   clickToPlayMerry('DREWXHILL - Struggle', 'r1');
+  // });
 
   $('#r1').click(function() {
     clickToPlayMerry('Camel Power Club - Ourson', 'r2');
