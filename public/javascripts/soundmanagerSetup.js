@@ -11,6 +11,8 @@ $(document).ready(function() {
       
       initializeSoundcloud();
 
+      // MERRY
+
       $('#m1').click(function() {
         var streamURL = getURL('233605980');
         var letter = event.target;
@@ -46,6 +48,8 @@ $(document).ready(function() {
         playMerry(tune, 'track5', 'Luke Mahony Hammond - DRIFT');
       });
 
+      // XMAS
+
       $('#x').click(function() {
         var streamURL = getURL('208738257');
         var tune = event.target;
@@ -74,6 +78,70 @@ $(document).ready(function() {
         playXMAS(tune, 'track18', 'Marcus Marr & Chet Faker - Birthday Card', 'm1');
       });
 
+      // CHRISTMAS
+
+      $('#c').click(function() {
+        var streamURL = getURL('235758881');
+        var tune = event.target;
+        soundmanagerCreate('track6', streamURL);
+        playChristmas(tune, 'track6', 'Ray BLK - 50/50', 'h');
+      });
+
+      $('#h').click(function() {
+        var streamURL = getURL('187929420');
+        var tune = event.target;
+        soundmanagerCreate('track7', streamURL);
+        playChristmas(tune, 'track7', 'Ménage à Trois - Ocean Boy', 'r3');
+      });
+
+      $('#r3').click(function() {
+        var streamURL = getURL('24895618');
+        var tune = event.target;
+        soundmanagerCreate('track8', streamURL);
+        playChristmas(tune, 'track8', 'Lovebirds ft. Stee Downes - Want You In My Soul', 'i');
+      });
+
+      $('#i').click(function() {
+        var streamURL = getURL('235593121');
+        var tune = event.target;
+        soundmanagerCreate('track9', streamURL);
+        playChristmas(tune, 'track9', 'Majid Jordan - Something About You', 's1');
+      });
+
+      $('#s1').click(function() {
+        var streamURL = getURL('235427283');
+        var tune = event.target;
+        soundmanagerCreate('track10', streamURL);
+        playChristmas(tune, 'track10', 'LOYAL - Blue and the Green', 't');
+      });
+
+      $('#t').click(function() {
+        var streamURL = getURL('208738257');
+        var tune = event.target;
+        soundmanagerCreate('track11', streamURL);
+        playChristmas(tune, 'track11', 'Joe Hertz - Ashes Ft LIV', 'm2');
+      });
+
+      $('#m2').click(function() {
+        var streamURL = getURL('214497089');
+        var tune = event.target;
+        soundmanagerCreate('track12', streamURL);
+        playChristmas(tune, 'track12', 'MagnetronMusic - Love Invaders', 'a');
+      });
+
+      $('#a').click(function() {
+        var streamURL = getURL('228045522');
+        var tune = event.target;
+        soundmanagerCreate('track13', streamURL);
+        playChristmas(tune, 'track13', 'Chrome Sparks - Moonraker', 's2');
+      });
+
+      $('#s2').click(function() {
+        var streamURL = getURL('234865253');
+        var tune = event.target;
+        soundmanagerCreate('track14', streamURL);
+        playChristmas(tune, 'track14', 'Marcus Marr & Chet Faker - Birthday Card', 'm1');
+      });
     },
 
   });
@@ -110,17 +178,22 @@ $(document).ready(function() {
     });
   };
 
-  // Track info in top banner
-
-  var displayTrackInfo = function(trackName) {
-    var infoBanner = document.getElementById('artist-info');
-    infoBanner.innerHTML = trackName
-  };
-
   // Play and pause tracks in MERRY
 
   var playMerry = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
     if (tune.className.indexOf('playing') === 6) {
+      soundmanagerPlay(soundmanagerTrackID, nextLetter);
+      displayTrackInfo(TrackInfo);
+    } else {
+      soundManager.pause(soundmanagerTrackID);
+      displayTrackInfo('');
+    };
+  };
+
+  // Play and pause tracks in Christmas
+
+  var playChristmas = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
+    if (tune.className.indexOf('playing') === 11) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       displayTrackInfo(TrackInfo);
     } else {

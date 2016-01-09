@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  SC.initialize({
-    client_id: 'aa7a4eb3979426038d8aa53a458baa54',
-    redirect_uri: 'http://localhost:9292/auth/soundcloud/callback'
-  });
+  // Track info in top banner
 
-  var stream;
+  var displayTrackInfo = function(trackName) {
+    var infoBanner = document.getElementById('artist-info');
+    infoBanner.innerHTML = trackName
+  };
 
   // MAKES LETTER GLOW IF TRACK IS PLAYING
 
@@ -13,94 +13,6 @@ $(document).ready(function() {
     $('.words').not(this).removeClass('playing');
     $(this).toggleClass('playing'); 
   });
-
-  // PLAY AND PAUSE 
-
-  var playTrack = function(trackID, x) {
-    var next = x;
-    SC.stream('/tracks/' + trackID).then(function(player) {
-      stream = player
-      stream.play();
-      endTrack(stream, x);
-    });
-  };
-
-  var endTrack = function(stream, letterID) {
-    stream.on("finish", function() {
-      var nextTrack = document.getElementById(letterID);
-      nextTrack.click();
-    });
-  };
-
-  // Play through Merry letters
-
-  var clickToPlayMerry = function(trackName, letterID) {
-    var tune = event.target;
-    var infoBanner = document.getElementById('artist-info');
-    var nextLetter = letterID;
-    if (tune.className.indexOf('playing') === 6) {
-      var track = tune.getAttribute("name");
-      playTrack(track, nextLetter);
-      infoBanner.innerHTML = trackName;
-    } else {
-      stream.pause();
-      infoBanner.innerHTML = "";
-    };
-  };
-
-  // Play through Christmas
-
-  var clickToPlayChristmas = function(trackName) {
-    var tune = event.target;
-    var infoBanner = document.getElementById('artist-info');
-    if (tune.className.indexOf('playing') === 11) {
-      var track = tune.getAttribute("name");
-      playTrack(track);
-      infoBanner.innerHTML = trackName;
-    } else {
-      stream.pause();
-      infoBanner.innerHTML = "";
-    };
-  };
-
-  // TRACK PLAYLIST
-
-  $('#c').click(function() {
-    clickToPlayChristmas('Ray BLK - 50/50', 'h');
-  }); 
-
-  $('#h').click(function() {
-    clickToPlayChristmas('Ménage à Trois - Ocean Boy', 'r3');
-  }); 
-
-  $('#r3').click(function() {
-    clickToPlayChristmas('Lovebirds ft. Stee Downes - Want You In My Soul', 'i');
-  }); 
-
-  $('#i').click(function() {
-    clickToPlayChristmas('Majid Jordan - Something About You', 's1');
-  }); 
-
-  $('#s1').click(function() {
-    clickToPlayChristmas('LOYAL - Blue and the Green', 't');
-  }); 
-
-  $('#t').click(function() {
-    clickToPlayChristmas('Joe Hertz - Ashes Ft LIV', 'm2');
-  }); 
-
-  $('#m2').click(function() {
-    clickToPlayChristmas('MagnetronMusic - Love Invaders', 'a');
-  }); 
-
-  $('#a').click(function() {
-    clickToPlayChristmas('Chrome Sparks - Moonraker', 's2');
-  }); 
-
-  $('#s2').click(function() {
-    clickToPlayChristmas('Marcus Marr & Chet Faker - Birthday Card', 'm1');
-  });
-
 
   // PLAY INSTRUCTIONS
 
