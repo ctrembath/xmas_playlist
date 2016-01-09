@@ -192,18 +192,18 @@ p#and {
 		display: block;
 	}
 
-	#mobile-notification {
+/*	#mobile-notification {
 		display: block;
 		margin-top: 1rem;
-	}
+	}*/
 
-	#artist-info {
+/*	#artist-info {
 		display: none;
-	}
+	}*/
 
-	.infoButton {
+/*	.infoButton {
 		display: none;
-	}
+	}*/
 
 	.merry {
 		margin-top: -.5rem !important;
