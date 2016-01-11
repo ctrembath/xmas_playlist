@@ -245,3 +245,21 @@ p#and {
 		font-size: 4.7rem !important;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	p.words {
+		font-size: 4rem !important;
+	}
+
+	p.mobile {
+		font-size: 3.2rem !important;
+	}
+
+	.Logo {
+		height: 2rem;
+	}
+
+	.thankyou {
+		font-size: .9rem;
+	}
+}
