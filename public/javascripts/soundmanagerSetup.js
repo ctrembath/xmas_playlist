@@ -137,7 +137,7 @@ $(document).ready(function() {
 
   var playTopline = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
     console.log(tune.className.indexOf('playing'));
-    if (tune.className.indexOf('playing') === 11) {
+    if (tune.className.indexOf('playing') === 18) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
     } else {
