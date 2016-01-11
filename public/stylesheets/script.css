@@ -8,6 +8,7 @@ body {
 
 .row {
 	max-width: 100% !important;
+	margin: 0 !important;
 }
 
 #artist-info {
@@ -196,6 +197,10 @@ p#and {
 
 @media screen and (max-width: 780px) {
 
+
+	.infoButton {
+		margin-top: 1rem !important;
+	}
 	.merry {
 		margin-top: -.5rem !important;
 		width: 100%;
@@ -225,7 +230,10 @@ p#and {
 	}
 
 	.christmas {
-		margin-top: -2rem !important;
+		margin-top: 3.2rem !important;
+		width: 100%;
+		margin-right: 0 !important;
+		text-align: center;
 	}
 
 	p.words {
@@ -234,6 +242,6 @@ p#and {
 	}
 
 	p.mobile {
-		font-size: 5.5rem !important;
+		font-size: 4.7rem !important;
 	}
 }
