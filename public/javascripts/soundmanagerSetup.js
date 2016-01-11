@@ -188,6 +188,7 @@ $(document).ready(function() {
   // Play and pause tracks in MERRY
 
   var playMerry = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
+    console.log(tune.className.indexOf('playing'));
     if (tune.className.indexOf('playing') === 6) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
@@ -200,6 +201,7 @@ $(document).ready(function() {
   // Play and pause tracks in Christmas
 
   var playChristmas = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
+    console.log(tune.className.indexOf('playing'));
     if (tune.className.indexOf('playing') === 11) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
@@ -212,6 +214,7 @@ $(document).ready(function() {
   // Play and pause tracks in XMAS
 
   var playXMAS = function(tune, soundmanagerTrackID, TrackInfo) {
+    console.log(tune.className.indexOf('playing'));
     if (tune.className.indexOf('playing') === 18) {
       soundmanagerPlay(soundmanagerTrackID);
       trackInfo(TrackInfo);
