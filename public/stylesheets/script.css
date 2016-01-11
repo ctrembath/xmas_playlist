@@ -1,5 +1,13 @@
 body {
-	background-color: #04002D;
+	background: url(../images/background2.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row {
+	max-width: 100% !important;
 }
 
 #artist-info {
@@ -83,23 +91,23 @@ p:hover {
 }
 
 #m1, #m2, #i, #m3{
-	color: #ff6650;
+	color: #00304C;
 }
 
 #e, #t, #x {
-	color: #00e1ba;
+	color: #004266;
 }
 
-#r1, #r2, #r3, #a2{
-	color: #ffcd7a;
+#r1, #r3, #a2{
+	color: #C5DECD;
 }
 
-#y, #a , #c, #s3{
-	color: #F56476;
+#y, #a , #c, #s3 {
+	color: #00B9AE;
 }
 
-#h, #s1, #s2  {
-	color : #ff9454;
+#h, #s1, #s2, #r2{
+	color : 037171;
 }
 
 .mobileChristmas {
@@ -216,12 +224,16 @@ p#and {
 		margin-bottom: .2rem;
 	}
 
+	.christmas {
+		margin-top: -2rem !important;
+	}
+
 	p.words {
 		font-size: 6.5rem !important;
 		text-align: center;
 	}
 
-	.mobile {
-		font-size: 6.5rem !important;
+	p.mobile {
+		font-size: 5.5rem !important;
 	}
 }
