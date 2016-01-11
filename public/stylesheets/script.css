@@ -188,23 +188,6 @@ p#and {
 
 @media screen and (max-width: 780px) {
 
-	.mobileChristmas{
-		display: block;
-	}
-
-/*	#mobile-notification {
-		display: block;
-		margin-top: 1rem;
-	}*/
-
-/*	#artist-info {
-		display: none;
-	}*/
-
-/*	.infoButton {
-		display: none;
-	}*/
-
 	.merry {
 		margin-top: -.5rem !important;
 		width: 100%;
@@ -231,10 +214,6 @@ p#and {
 	.Logo {
 		height:3rem;
 		margin-bottom: .2rem;
-	}
-
-	.christmas {
-		display:none;
 	}
 
 	p.words {
