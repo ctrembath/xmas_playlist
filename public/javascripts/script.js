@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  // Track info in top banner
-
-  var displayTrackInfo = function(trackName) {
-    var infoBanner = document.getElementById('artist-info');
-    infoBanner.innerHTML = trackName
-  };
-
   // MAKES LETTER GLOW IF TRACK IS PLAYING
 
   $(".words").click(function(){

@@ -178,15 +178,22 @@ $(document).ready(function() {
     });
   };
 
+  // Track Info
+
+  var trackInfo = function(trackName) {
+    var infoBanner = document.getElementById('artist-info');
+    infoBanner.innerHTML = trackName;
+  };
+
   // Play and pause tracks in MERRY
 
   var playMerry = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
     if (tune.className.indexOf('playing') === 6) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
-      displayTrackInfo(TrackInfo);
+      trackInfo(TrackInfo);
     } else {
       soundManager.pause(soundmanagerTrackID);
-      displayTrackInfo('');
+      trackInfo('');
     };
   };
 
@@ -195,10 +202,10 @@ $(document).ready(function() {
   var playChristmas = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
     if (tune.className.indexOf('playing') === 11) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
-      displayTrackInfo(TrackInfo);
+      trackInfo(TrackInfo);
     } else {
       soundManager.pause(soundmanagerTrackID);
-      displayTrackInfo('');
+      trackInfo('');
     };
   };
 
@@ -207,10 +214,10 @@ $(document).ready(function() {
   var playXMAS = function(tune, soundmanagerTrackID, TrackInfo) {
     if (tune.className.indexOf('playing') === 18) {
       soundmanagerPlay(soundmanagerTrackID);
-      displayTrackInfo(TrackInfo);
+      trackInfo(TrackInfo);
     } else {
       soundManager.pause(soundmanagerTrackID);
-      displayTrackInfo('');
+      trackInfo('');
     };
   };
 
