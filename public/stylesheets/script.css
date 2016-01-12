@@ -43,7 +43,7 @@ p#instructions {
 	color: #0CBABA;
 }
 
-#cover{ 
+#cover { 
 	position:fixed;
 	top:0;
 	left:0;
@@ -67,7 +67,7 @@ p#instructions {
 	display: none;
 }
 
-div{
+div {
 	text-align: center; 
 }
 
@@ -91,7 +91,7 @@ p:hover {
 	font-size: 11rem;
 }
 
-#m1, #m2, #i, #m3{
+#m1, #m2, #i, #m3 {
 	color: #00304C;
 }
 
@@ -99,7 +99,7 @@ p:hover {
 	color: #004266;
 }
 
-#r1, #r3, #a2{
+#r1, #r3, #a2 {
 	color: #C5DECD;
 }
 
@@ -107,7 +107,7 @@ p:hover {
 	color: #00B9AE;
 }
 
-#h, #s1, #s2, #r2{
+#h, #s1, #s2, #r2 {
 	color : 037171;
 }
 
@@ -118,7 +118,6 @@ p:hover {
 .playing {
 	text-shadow: #FDFFFC 0 0 60px, #41EAD4 5px 5px 20px;
 	filter: glow(color=#EEEE00,strength=3);
-
 }
 
 .thankyou {
@@ -133,13 +132,12 @@ p.nomayo {
 	color:#FFB17A;
 }
 
-#green{
+#green {
 	color: #75DBCD;
   letter-spacing: 0.4rem;
-
 }
 
-a.companyLinks{
+a.companyLinks {
 	text-decoration: none;
 	color: white;
 	font-family: 'Roboto', sans-serif;
@@ -161,7 +159,6 @@ p#and {
 #juicey {
 	letter-spacing: .4rem;
 }
-
 
 #nomayologo {
 	-webkit-animation:spin 4s linear infinite;
@@ -197,10 +194,10 @@ p#and {
 
 @media screen and (max-width: 780px) {
 
-
 	.infoButton {
 		margin-top: 1rem !important;
 	}
+
 	.merry {
 		margin-top: -.5rem !important;
 		width: 100%;
@@ -247,6 +244,7 @@ p#and {
 }
 
 @media screen and (max-width: 650px) {
+	
 	p.words {
 		font-size: 4rem !important;
 	}
