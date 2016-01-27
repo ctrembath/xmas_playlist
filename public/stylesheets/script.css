@@ -20,16 +20,6 @@ body {
 	text-shadow:#ffffff 1px 1px 7px;
 }
 
-#mobile-notification {
-	display: none;
-	font-family: 'Exo 2', sans-serif;
-	font-size: .9rem;
-	font-weight: 200;
-	color: #FF523F;
-	letter-spacing: .2rem;
-	text-shadow:#ffffff 1px 1px 7px;
-}
-
 .infoButton {
 	height: 2rem;
 	float: right;
