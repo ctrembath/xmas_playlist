@@ -1,9 +1,7 @@
-body {
-	background: url(../images/background2.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/*layout*/
+
+.fullbackground {
+	height: 100%;
 }
 
 .row {
@@ -59,89 +57,9 @@ p#instructions {
 	height:2rem;
 }
 
-.merry {
-	margin-top: -2.5rem !important;
-}
-
-#play {
-	display: none;
-}
-
-div {
-	text-align: center; 
-}
-
-.christmas {
-  margin-top: -4rem !important;
-}
-
-p.words {
-	font-size: 13rem;
-	font-family: 'Exo 2', sans-serif;
-	display: inline;
-}
-
 p:hover {
 	cursor: pointer;
 	cursor: hand;
-}
-
-.xmas {
-	width :100%;
-	font-size: 11rem;
-}
-
-#m1, #m2, #i, #m3 {
-	color: #00304C;
-}
-
-#e, #t, #x {
-	color: #004266;
-}
-
-#r1, #r3, #a2 {
-	color: #C5DECD;
-}
-
-#y, #a , #c, #s3 {
-	color: #00B9AE;
-}
-
-#h, #s1, #s2, #r2 {
-	color : 037171;
-}
-
-.mobileChristmas {
-	display:none;
-}
-
-.playing {
-	text-shadow: #FDFFFC 0 0 60px, #41EAD4 5px 5px 20px;
-	filter: glow(color=#EEEE00,strength=3);
-}
-
-.thankyou {
-	position:fixed;
-	bottom:0px;
-	height:7.5rem;
-	width:100% !important;
-}
-
-p.nomayo {
-	font-size: 1.5rem;
-	color:#FFB17A;
-}
-
-#green {
-	color: #75DBCD;
-  letter-spacing: 0.4rem;
-}
-
-a.companyLinks {
-	text-decoration: none;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	text-shadow: #1F487E 0 0 10px;
 }
 
 .Logo {
@@ -174,6 +92,159 @@ p#and {
 	-webkit-animation:spin 4s linear infinite;
 	-moz-animation:spin 4s linear infinite;
 	animation:spin 4s linear infinite;
+}
+
+.thankyou {
+	position:fixed;
+	bottom:0px;
+	height:7.5rem;
+	width:100% !important;
+}
+
+p.nomayo {
+	font-size: 1.5rem;
+	color:#FFB17A;
+}
+
+#green {
+	color: #75DBCD;
+  letter-spacing: 0.4rem;
+}
+
+a.companyLinks {
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: #1F487E 0 0 10px;
+}
+
+/*Monday*/
+
+.monday {
+	background: url(../images/background2.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+p.monday-words {
+	font-size: 13rem;
+	font-family: 'Exo 2', sans-serif;
+	display: inline;
+}
+
+#m1, #m2, #i, #m3 {
+	color: #00304C;
+}
+
+#e, #t, #x {
+	color: #004266;
+}
+
+#r1, #r3, #a2 {
+	color: #C5DECD;
+}
+
+#y, #a , #c, #s3 {
+	color: #00B9AE;
+}
+
+#h, #s1, #s2, #r2 {
+	color : 037171;
+}
+
+/*Tuesday*/
+
+.tuesday {
+	background: black url(../images/tuesday.gif);
+	background-position: center;
+}
+
+p.tuesday-words {
+	display: inline;
+	font-size: 15rem;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	opacity: .7;
+}
+/*Wednesday*/
+
+.wednesday {
+	background: url(../images/wednesday.gif) fixed 50% 50%;; 
+
+}
+
+/*Thursday*/
+.thursday {
+	background: url(../images/thursday.gif);
+}
+
+
+/*Friday*/
+.friday {
+	background: url(../images/friday.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Satuday*/
+
+.saturday {
+	background: url(../images/saturday.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Sunday*/
+
+.sunday {
+	background: url(../images/sunday.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.merry {
+	margin-top: -2.5rem !important;
+}
+
+#play {
+	display: none;
+}
+
+div {
+	text-align: center; 
+}
+
+.christmas {
+  margin-top: -4rem !important;
+}
+
+p:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.xmas {
+	width :100%;
+	font-size: 11rem;
+}
+
+
+
+.mobileChristmas {
+	display:none;
+}
+
+.playing {
+	text-shadow: #FDFFFC 0 0 60px, #41EAD4 5px 5px 20px;
+	filter: glow(color=#EEEE00,strength=3);
 }
 
 
