@@ -136,7 +136,8 @@ $(document).ready(function() {
   // Play and pause tracks in top line letters
 
   var playTopline = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
-    if (tune.className.indexOf('playing') === 18) {
+    console.log(tune.className.indexOf('playing'));
+    if (tune.className.indexOf('playing') === 31) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
     } else {
@@ -148,7 +149,8 @@ $(document).ready(function() {
   // Play and pause tracks in second line letters
 
   var playSecondline = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
-    if (tune.className.indexOf('playing') === 6) {
+    console.log(tune.className.indexOf('playing'));
+    if (tune.className.indexOf('playing') === 19) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
     } else {
