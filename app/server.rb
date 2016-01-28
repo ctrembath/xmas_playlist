@@ -59,6 +59,10 @@ def date_today
     erb :thursday
   elsif @day == 'Friday'
     erb :friday
+  elsif @day == 'Saturday'
+    erb :saturday
+  elsif @day == 'Sunday'
+    erb :sunday
   else
     erb :monday
   end
