@@ -147,7 +147,7 @@ p.monday-words {
 /*Tuesday*/
 
 .tuesday {
-	background: black url(../images/tuesday.gif);
+	background: url(../images/tuesday.gif);
 	background-position: center;
 }
 
@@ -157,18 +157,30 @@ p.tuesday-words {
 	font-family: 'Ubuntu Condensed', sans-serif;
 	opacity: .7;
 }
+
 /*Wednesday*/
 
 .wednesday {
 	background: url(../images/wednesday.gif) fixed 50% 50%;; 
+}
+
+p.wednesday-words {
+	display: inline;
+	font-size: 10rem;
 
 }
 
 /*Thursday*/
+
 .thursday {
-	background: url(../images/thursday.gif);
+	background: #65fbbf url(../images/thursday.gif) no-repeat center center fixed;
 }
 
+p.thursday-words {
+	display: inline;
+	font-size: 10rem;
+
+}
 
 /*Friday*/
 .friday {
@@ -177,6 +189,10 @@ p.tuesday-words {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+p.friday-words {
+	display: inline;
 }
 
 /*Satuday*/
@@ -188,6 +204,9 @@ p.tuesday-words {
 	-o-background-size: cover;
 	background-size: cover;
 }
+p.saturday-words {
+	display: inline;
+}
 
 /*Sunday*/
 
@@ -197,6 +216,9 @@ p.tuesday-words {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+p.sunday-words {
+	display: inline;
 }
 
 
