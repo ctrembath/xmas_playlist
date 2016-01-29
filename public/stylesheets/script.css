@@ -232,7 +232,7 @@ p.thursday-words {
 
 p.thursday-words:hover {
 	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);;
+	transform: rotate(360deg);
 }
 
 /*Friday*/
@@ -249,6 +249,8 @@ p.friday-words {
 	font-size: 16rem;
 	letter-spacing: 2rem;
 	font-family: 'Amatic SC', serif;
+	color: black;
+	text-shadow: 3px 3px 5px #4bfc00, 0px 0px 20px black;
 }
 
 /*Weekend*/
