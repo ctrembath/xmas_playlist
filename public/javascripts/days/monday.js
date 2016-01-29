@@ -52,7 +52,7 @@ $(document).ready(function() {
         var streamURL = getURL('208738257');
         var tune = event.target;
         soundmanagerCreate('track11', streamURL);
-        playTopline(tune, 'track11', 'Joe Hertz - Ashes Ft LIV', 'm2');
+        playTopline(tune, 'track11', 'Joe Hertz - Ashes Ft LIV', 'm1');
       });
 
       // SECONDLINE - VIBES
@@ -121,7 +121,6 @@ $(document).ready(function() {
     soundManager.pauseAll();
     soundManager.play(trackID, {
       onfinish: function() {
-        console.log('&& TRACK FINISHED &&');
         nextTrack.click();
       }
     });
@@ -137,7 +136,6 @@ $(document).ready(function() {
   // Play and pause tracks in top line letters
 
   var playTopline = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
-    console.log(tune.className.indexOf('playing'));
     if (tune.className.indexOf('playing') === 31) {
       soundmanagerPlay(soundmanagerTrackID, nextLetter);
       trackInfo(TrackInfo);
