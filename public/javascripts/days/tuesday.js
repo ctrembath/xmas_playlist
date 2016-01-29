@@ -21,6 +21,60 @@ $(document).ready(function() {
         soundmanagerCreate(trackID, streamURL);
         playTopLine(tune, trackID, 'Tourist - To Have You Back', 'u-tues');
       });
+
+      $('#u-tues').click(function() {
+        var trackID = '118894880'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Odesza - My Friends Never Die Little', 'e-tues');
+      });
+
+      $('#e-tues').click(function() {
+        var trackID = '1688282'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Little People - Start Shootin\'', 's-tues');
+      });
+
+      $('#s-tues').click(function() {
+        var trackID = '73799584'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Nuages - Dreams', 'd-tues');
+      });
+
+      $('#d-tues').click(function() {
+        var trackID = '1116385682'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Darkside - Paper Trails (RA Sessions)', 'a-tues');
+      });
+
+      $('#a-tues').click(function() {
+        var trackID = '70430214'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Nujabes - Reflection Eternal', 'y-tues');
+      });
+
+      $('#y-tues').click(function() {
+        var trackID = '123022564'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Ben Khan - Savage', 'v-tues');
+      });
     }
   })
 
