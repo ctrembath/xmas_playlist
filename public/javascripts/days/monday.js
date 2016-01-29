@@ -94,6 +94,7 @@ $(document).ready(function() {
     },
   });
 
+
   // Initialize Soundcloud and get stream url
 
   var initializeSoundcloud = function() {
@@ -105,7 +106,7 @@ $(document).ready(function() {
   var getURL = function(soundcloudTrackID) {
     return 'https://api.soundcloud.com/tracks/' + soundcloudTrackID + '/stream?client_id=' + soundcloudClientID;
   };
-
+  
   // SoundManager create and play methods
 
   var soundmanagerCreate = function(trackID, trackURL) {
@@ -158,6 +159,7 @@ $(document).ready(function() {
       trackInfo('');
     };
   };
+
 });
 
 

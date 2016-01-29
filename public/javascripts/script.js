@@ -16,5 +16,4 @@ $(document).ready(function() {
   $('#cover').click(function(){
      $('#cover').hide();
   });
-
 });
