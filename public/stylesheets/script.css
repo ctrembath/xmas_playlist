@@ -131,7 +131,7 @@ a.companyLinks {
 
 p.monday-words {
 	font-size: 13rem;
-	font-family: 'Creepster', cursive;
+	font-family: 'Creepster', sans-serif;
 	display: inline;
 	text-shadow: 2px 2px 5px black;
 	opacity: .75;
@@ -159,10 +159,6 @@ p.monday-words:hover {
 
 #h, #s1, #s2, #r2 {
 	color : #FFF5B2;
-}
-
-p.monday-words:hover {
-
 }
 
 /*Tuesday*/
