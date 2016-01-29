@@ -179,6 +179,10 @@ p.tuesday-words {
 	opacity: .7;
 }
 
+p.tuesday-words:hover {
+	opacity: 1;
+}
+
 /*Wednesday*/
 
 .wednesday {
