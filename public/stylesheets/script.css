@@ -131,28 +131,34 @@ a.companyLinks {
 
 p.monday-words {
 	font-size: 13rem;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Creepster', cursive;
 	display: inline;
+	text-shadow: 2px 2px 5px black;
+	opacity: .75;
 }
 
 #m1, #m2, #i, #m3 {
-	color: #00304C;
+	color: #D4FCC3;
 }
 
 #e, #t, #x {
-	color: #004266;
+	color: #FFF5B2;
 }
 
 #r1, #r3, #a2 {
-	color: #C5DECD;
+	color: #D4FCC3;
 }
 
 #y, #a , #c, #s3 {
-	color: #00B9AE;
+	color: #D4FCC3;
 }
 
 #h, #s1, #s2, #r2 {
-	color : 037171;
+	color : #FFF5B2;
+}
+
+p.monday-words:hover {
+
 }
 
 /*Tuesday*/
@@ -165,7 +171,7 @@ p.monday-words {
 p.tuesday-words {
 	display: inline;
 	font-size: 15rem;
-	font-family: 'Ubuntu Condensed', sans-serif;
+	font-family: 'Geo', sans-serif;
 	opacity: .7;
 }
 
@@ -198,16 +204,22 @@ p.wednesday-words {
 
 .thursday {
 	background: #65fbbf url(../images/thursday.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 p.thursday-words {
 	display: inline;
 	font-size: 10rem;
 	font-family: 'Roboto', serif;
+	color: #00ffc3;
 	font-weight: 100;
 	border-radius: 50%;
 	-webkit-transition: -webkit-transform .8s ease-in-out;
-	transition: transform .8s ease-in-out
+	transition: transform .8s ease-in-out;
+	text-shadow: 1px 1px 5px black;
 }
 
 p.thursday-words:hover {
@@ -245,7 +257,7 @@ p.weekend-words {
 	font-size: 10rem;
 	color: #88dffc;
 	opacity: .5;
-	font-family: 'Roboto', serif;
+	font-family: 'Averia Serif Libre', cursive;, serif;
 	font-weight: 300;
 	text-shadow: 1px 1px 5px #ff4800;
 }
