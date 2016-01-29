@@ -99,6 +99,12 @@ p.nomayo {
 #green {
 	color: #75DBCD;
   letter-spacing: 0.4rem;
+  text-shadow: black 1px 1px 5px;
+}
+
+#green:hover {
+	color: black;
+  text-shadow:#75DBCD 1px 1px 5px;
 }
 
 a.companyLinks {
@@ -106,6 +112,11 @@ a.companyLinks {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	text-shadow: #1F487E 0 0 10px;
+}
+
+.spacingTop {
+	margin-top: 2rem; 
+	padding-top: 9rem;
 }
 
 /*Monday*/
@@ -161,13 +172,26 @@ p.tuesday-words {
 /*Wednesday*/
 
 .wednesday {
-	background: url(../images/wednesday.gif) fixed 50% 50%;; 
+	margin-top: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #434343;
+	background-image:linear-gradient(#434343, #282828);
+}
+
+#content{
+	background-color: transparent;
+	background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+	height:100%;
+	background-size:50px 50px;
 }
 
 p.wednesday-words {
 	display: inline;
 	font-size: 10rem;
-
+	font-family: 'Monofett', serif;
+	font-weight: 100;
+	color: #FF4A00;
 }
 
 /*Thursday*/
@@ -179,7 +203,16 @@ p.wednesday-words {
 p.thursday-words {
 	display: inline;
 	font-size: 10rem;
+	font-family: 'Roboto', serif;
+	font-weight: 100;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .8s ease-in-out
+}
 
+p.thursday-words:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);;
 }
 
 /*Friday*/
@@ -193,34 +226,36 @@ p.thursday-words {
 
 p.friday-words {
 	display: inline;
+	font-size: 16rem;
+	letter-spacing: 2rem;
+	font-family: 'Amatic SC', serif;
 }
 
-/*Satuday*/
+/*Weekend*/
 
-.saturday {
-	background: url(../images/saturday.gif) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-p.saturday-words {
-	display: inline;
-}
-
-/*Sunday*/
-
-.sunday {
+.weekend {
 	background: url(../images/sunday.gif) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-p.sunday-words {
+p.weekend-words {
 	display: inline;
+	font-size: 10rem;
+	color: #88dffc;
+	opacity: .5;
+	font-family: 'Roboto', serif;
+	font-weight: 300;
+	text-shadow: 1px 1px 5px #ff4800;
 }
 
+
+#w-wee, #e4-wee, #k-wee {
+	color: #ff4800;
+	text-shadow: 1px 1px 5px #88dffc;
+
+}
 
 .merry {
 	margin-top: -2.5rem !important;

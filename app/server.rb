@@ -34,13 +34,8 @@ get '/friday' do
 end
 
 
-get '/saturday' do
-  erb :saturday
-end
-
-
-get '/sunday' do
-  erb :sunday
+get '/weekend' do
+  erb :weekend
 end
 
 private
@@ -60,9 +55,9 @@ def date_today
   elsif @day == 'Friday'
     erb :friday
   elsif @day == 'Saturday'
-    erb :saturday
+    erb :weekend
   elsif @day == 'Sunday'
-    erb :sunday
+    erb :weekend
   else
     erb :monday
   end
