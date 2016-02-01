@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
-
   soundManager.setup({
     
     url: './swf',
@@ -9,9 +7,7 @@ $(document).ready(function() {
 
     onready: function() {
 
-      initializeSoundcloud();
-
-      // TOPLINE - MONDAY
+      // TOP LINE - TUESDAY
 
       $('#t-tues').click(function() {
         var trackID = '243051362'
@@ -75,54 +71,53 @@ $(document).ready(function() {
         soundmanagerCreate(trackID, streamURL);
         playTopLine(tune, trackID, 'Ben Khan - Savage', 'v-tues');
       });
+
+      // SECOND LIND - VIBES
+
+      $('#v-tues').click(function() {
+        var trackID = '237386464'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Pop Caan - Feisty Chat', 'i-tues');
+      });
+
+      $('#i-tues').click(function() {
+        var trackID = '241511581'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Woods - Sun City Creeps', 'b-tues');
+      });
+
+      $('#b-tues').click(function() {
+        var trackID = '237101589'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Flybear - The Hook', 'ee-tues');
+      });
+
+      $('#ee-tues').click(function() {
+        var trackID = '116385682'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Darkside - Paper Trails (RA Sessions)', 'ss-tues');
+      });
+
+      $('#ss-tues').click(function() {
+        var trackID = '201557891'
+        var streamURL = getURL(trackID);
+        var tune = event.target;
+
+        soundmanagerCreate(trackID, streamURL);
+        playTopLine(tune, trackID, 'Glxy - Searching You', 't-tues');
+      });
     }
   })
-
-  // Initialize Soundcloud and get stream url
-
-  var initializeSoundcloud = function() {
-    SC.initialize({
-      client_id: soundcloudClientID
-    });
-  };
-
-  var getURL = function(soundcloudTrackID) {
-    return 'https://api.soundcloud.com/tracks/' + soundcloudTrackID + '/stream?client_id=' + soundcloudClientID;
-  };
-
-  // SoundManager create and play method
-
-  var soundmanagerCreate = function(trackID, trackURL) {
-    soundManager.createSound({
-      id: trackID,
-      url: trackURL
-    });
-  };
-
-  var soundmanagerPlay = function(trackID, nextLetter) {
-    var nextTrack = document.getElementById(nextLetter);
-    soundManager.pauseAll();
-    soundManager.play(trackID, {
-      onfinish: function() {
-        nextTrack.click();
-      }
-    })
-  };
-
-  // Track Info
-
-  var trackInfo = function(trackName) {
-    var infoBanner = document.getElementById('artist-info');
-    infoBanner.innerHTML = trackName;
-  };
-
-  var playTopLine = function(tune, soundmanagerID, info, nextLetter) {
-    if (tune.className.indexOf('playing') === 32 ) {
-      soundmanagerPlay(soundmanagerID, nextLetter);
-      trackInfo(info)
-    } else {
-      soundManager.pause(soundmanagerID);
-      trackInfo('');
-    };
-  };
 });
