@@ -184,6 +184,11 @@ p.tuesday-words:hover {
 	opacity: 1;
 }
 
+#blacki {
+	-webkit-filter: invert(.8);
+	filter: invert(.8);
+}
+
 /*Wednesday*/
 
 .wednesday {
