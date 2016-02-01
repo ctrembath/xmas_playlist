@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  var font1 = "https://fonts.googleapis.com/css?family=Creepster|Roboto:400,300|Monofett|Amatic+SC|Geo|Averia+Serif+Libre:700italic' rel='stylesheet"
+  var font2 = "https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700italic"
+  
+  loadStyleSheets('/stylesheets/foundation.min.css', '/stylesheets/script.css');
+  loadFonts(font1, font2);
+
   // Letter glows if playing
 
   $(".words").click(function(){
@@ -17,6 +23,26 @@ $(document).ready(function() {
      $('#cover').hide();
   });
 });
+
+// Load css & fonts
+
+function loadStyleSheets(src1, src2) {
+  if (document.createStyleSheet){
+    document.createStyleSheet(src);
+  } else {
+    $("head").append($("<link rel='stylesheet' href='" + src1 + "' type='text/css' media='screen' />"));
+    $("head").append($("<link rel='stylesheet' href='" + src2 + "' type='text/css' media='screen' />"));
+  }
+};
+
+function loadFonts(font1, font2) {
+  if (document.createStyleSheet){
+    document.createStyleSheet(src);
+  } else {
+    $("head").append($("<link rel='stylesheet' href='" + font1 + "' type='text/css' media='screen' />"));
+    $("head").append($("<link rel='stylesheet' href='" + font2 + "' type='text/css' media='screen' />"));
+  }
+};
 
 // Initialize Soundcloud and get stream url
 
