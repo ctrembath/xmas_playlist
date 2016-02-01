@@ -13,6 +13,11 @@ div {
 	text-align: center; 
 }
 
+p:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
 #artist-info {
 	font-family: 'Geo', sans-serif;
 	font-size: 1.5rem;
@@ -49,11 +54,6 @@ p#instructions {
 
 .marqueeRow {
 	height:2rem;
-}
-
-p:hover {
-	cursor: pointer;
-	cursor: hand;
 }
 
 .Logo {
@@ -123,10 +123,6 @@ a.companyLinks {
 	padding-top: 9rem;
 }
 
-/*#play {
-	display: none;
-}*/
-
 .merry {
 	margin-top: -2.5rem !important;
 }
@@ -138,11 +134,6 @@ a.companyLinks {
 .xmas {
 	width :100%;
 	font-size: 11rem;
-}
-
-p:hover {
-	cursor: pointer;
-	cursor: hand;
 }
 
 /*Monday*/
@@ -271,6 +262,7 @@ p.friday-words {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
 p.weekend-words {
 	display: inline;
 	font-size: 10rem;
@@ -285,7 +277,6 @@ p.weekend-words {
 #w-wee, #e4-wee, #k-wee {
 	color: #ff4800;
 	text-shadow: 1px 1px 5px #88dffc;
-
 }
 
 .mobileChristmas {
@@ -307,7 +298,6 @@ p.weekend-words {
 	.spacingTop {
 		margin-top: 2rem; 
 		padding-top: 2.5rem;
-
 	}
 }
 
