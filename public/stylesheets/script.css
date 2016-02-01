@@ -225,15 +225,15 @@ p.thursday-words {
 	color: #00ffc3;
 	font-weight: 100;
 	border-radius: 50%;
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	transition: transform .8s ease-in-out;
 	text-shadow: 1px 1px 5px black;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
 p.thursday-words:hover {
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
-}
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+  }
 
 /*Friday*/
 .friday {
