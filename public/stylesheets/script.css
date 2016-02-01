@@ -219,11 +219,12 @@ p.wednesday-words {
 }
 
 p.thursday-words {
+	display: inline;
 	font-size: 10rem;
 	font-family: 'Roboto', serif;
 	color: #00ffc3;
 	font-weight: 100;
-	letter-spacing: 2rem;
+	letter-spacing: .5rem;
 	text-shadow: 1px 1px 5px black;
 	border-radius: 50%;
   transition: transform .8s ease-in-out;
