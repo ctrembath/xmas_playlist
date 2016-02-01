@@ -5,8 +5,7 @@ require 'date'
 set :public_dir, Proc.new { File.join(root, "..", "public") }
 
 get '/' do
-  # date_today
-  erb :monday
+  date_today
 end
 
 get '/monday' do
