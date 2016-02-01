@@ -60,7 +60,7 @@ var trackInfo = function(trackName) {
 
 // Play and pause tracks in top line letters
 
-var playTopline = function(tune, soundmanagerTrackID, info, nextLetter) {
+var play = function(tune, soundmanagerTrackID, info, nextLetter) {
   
   var classArray = tune.className.split(" ");
   
@@ -73,14 +73,3 @@ var playTopline = function(tune, soundmanagerTrackID, info, nextLetter) {
   };
 };
 
-// Play and pause tracks in second line letters
-
-var playSecondline = function(tune, soundmanagerTrackID, TrackInfo, nextLetter) {
-  if (tune.className.indexOf('playing') === 19) {
-    soundmanagerPlay(soundmanagerTrackID, nextLetter);
-    trackInfo(TrackInfo);
-  } else {
-    soundManager.pause(soundmanagerTrackID);
-    trackInfo('');
-  };
-};

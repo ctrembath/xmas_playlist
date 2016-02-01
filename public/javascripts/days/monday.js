@@ -15,7 +15,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'Ray BLK - 50/50', 'h');
+        play(tune, trackID, 'Ray BLK - 50/50', 'h');
       });
 
       $('#h').click(function() {
@@ -24,7 +24,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'Ménage à Trois - Ocean Boy', 'r3');
+        play(tune, trackID, 'Ménage à Trois - Ocean Boy', 'r3');
       });
 
       $('#r3').click(function() {
@@ -33,7 +33,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'Lovebirds ft. Stee Downes - Want You In My Soul', 'i');
+        play(tune, trackID, 'Lovebirds ft. Stee Downes - Want You In My Soul', 'i');
       });
 
       $('#i').click(function() {
@@ -42,7 +42,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'Majid Jordan - Something About You', 's1');
+        play(tune, trackID, 'Majid Jordan - Something About You', 's1');
       });
 
       $('#s1').click(function() {
@@ -51,7 +51,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'LOYAL - Blue and the Green', 't');
+        play(tune, trackID, 'LOYAL - Blue and the Green', 't');
       });
 
       $('#t').click(function() {
@@ -60,7 +60,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playTopline(tune, trackID, 'Joe Hertz - Ashes Ft LIV', 'm1');
+        play(tune, trackID, 'Joe Hertz - Ashes Ft LIV', 'm1');
       });
 
       // SECOND LINE - VIBES
@@ -71,7 +71,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playSecondline(tune, trackID, 'Couros - Turning', 'e')
+        play(tune, trackID, 'Couros - Turning', 'e')
       });
 
       $('#e').click(function() {
@@ -80,7 +80,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playSecondline(tune, trackID, 'DREWXHILL - Struggle', 'r1')
+        play(tune, trackID, 'DREWXHILL - Struggle', 'r1')
       });
 
       $('#r1').click(function() {
@@ -89,7 +89,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playSecondline(tune, trackID, 'Camel Power Club - Ourson', 'r2');
+        play(tune, trackID, 'Camel Power Club - Ourson', 'r2');
       });
 
       $('#r2').click(function() {
@@ -98,7 +98,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playSecondline(tune, trackID, 'Club Kuru - Layla', 'y');
+        play(tune, trackID, 'Club Kuru - Layla', 'y');
       });
 
       $('#y').click(function() {
@@ -107,7 +107,7 @@ $(document).ready(function() {
         var tune = event.target;
 
         soundmanagerCreate(trackID, streamURL);
-        playSecondline(tune, trackID, 'Luke Mahony Hammond - DRIFT');
+        play(tune, trackID, 'Luke Mahony Hammond - DRIFT');
       });
     },
   });
