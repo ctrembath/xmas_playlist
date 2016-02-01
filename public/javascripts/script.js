@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  // MAKES LETTER GLOW IF TRACK IS PLAYING
+  // Letter glows if playing
 
   $(".words").click(function(){
     $('.words').not(this).removeClass('playing');
     $(this).toggleClass('playing'); 
   });
 
-  // PLAY INSTRUCTIONS
+  // Play instructions
 
   $('.infoButton').click(function(){
     $('#cover').show();
@@ -34,7 +34,8 @@ var getURL = function(soundcloudTrackID) {
 
 // SoundManager create and play methods
 
-var soundmanagerCreate = function(trackID, trackURL) {
+var soundmanagerCreate = function(trackID) {
+  trackURL = getURL(trackID)
   soundManager.createSound({
     id: trackID,
     url: trackURL

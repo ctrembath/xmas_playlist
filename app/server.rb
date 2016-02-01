@@ -40,10 +40,13 @@ end
 
 private
 
-def date_today  
+def week_day
   @date = Date.today
-  @day = @date.strftime('%A')
+  @date.strftime('%A')
+end
 
+def date_today
+  @day = week_day
   if @day == 'Monday'
     erb :monday
   elsif @day == 'Tuesday'
@@ -54,12 +57,8 @@ def date_today
     erb :thursday
   elsif @day == 'Friday'
     erb :friday
-  elsif @day == 'Saturday'
+  elsif
     erb :weekend
-  elsif @day == 'Sunday'
-    erb :weekend
-  else
-    erb :monday
   end
 end
 
