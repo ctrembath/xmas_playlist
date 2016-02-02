@@ -61,17 +61,17 @@ $(document).ready(function() {
       // VIBES LINE
 
       $('#v-tues').click(function() {
-        var trackID = '237386464';
+        var trackID = '201557891';
         var tune = event.target;
         soundmanagerCreate(trackID);
-        play(tune, trackID, 'Pop Caan - Feisty Chat', 'i-tues');
+        play(tune, trackID, 'Glxy - Searching You', 'i-tues');
       });
 
       $('#i-tues').click(function() {
-        var trackID = '241511581';
+        var trackID = '210633688';
         var tune = event.target;
         soundmanagerCreate(trackID);
-        play(tune, trackID, 'Woods - Sun City Creeps', 'b-tues');
+        play(tune, trackID, 'Kiiara - Gold', 'b-tues');
       });
 
       $('#b-tues').click(function() {
@@ -89,10 +89,10 @@ $(document).ready(function() {
       });
 
       $('#ss-tues').click(function() {
-        var trackID = '201557891';
+        var trackID = '237386464';
         var tune = event.target;
         soundmanagerCreate(trackID);
-        play(tune, trackID, 'Glxy - Searching You', 't-tues');
+        play(tune, trackID, 'Pop Caan - Feisty Chat', 't-tues');
       });
     }
   })
