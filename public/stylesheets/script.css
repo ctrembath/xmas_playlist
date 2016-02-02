@@ -245,6 +245,7 @@ p.thursday-words:hover {
 }
 
 /*Friday*/
+
 .friday {
 	background: url(../images/friday.gif) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -320,7 +321,6 @@ p.weekend-words {
 	}
 }
 
-
 @media screen and (max-width: 1140px) {
 
 	.xmas {
@@ -377,11 +377,29 @@ p.weekend-words {
 @media screen and (max-width: 650px) {
 	
 	p.words {
-		font-size: 4rem !important;
+		font-size: 5.4rem !important;
 	}
 
 	p.mobile {
-		font-size: 3.2rem !important;
+		font-size: 5rem !important;
+	}
+
+	p.wednesday-words {
+		font-size: 3.8rem !important;
+	}
+
+	p.thursday-words {
+		font-size: 3.8rem !important;		
+		letter-spacing: 0;
+	}
+
+	p.friday-words {
+		letter-spacing: .8rem;
+		font-size: 7rem !important;
+	}
+
+	p.weekend-words {
+		font-size: 3.8rem !important;
 	}
 
 	.Logo {
@@ -391,4 +409,12 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
+}
+
+@media screen and (max-width: 600px) {
+
+	p.words {
+		font-size: 3rem !important;
+	}
+
 }
