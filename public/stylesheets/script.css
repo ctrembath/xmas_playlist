@@ -411,7 +411,7 @@ p.weekend-words {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
 	p.words {
 		font-size: 3rem !important;
