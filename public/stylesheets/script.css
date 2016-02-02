@@ -396,3 +396,16 @@ p.weekend-words {
 		font-size: .9rem;
 	}
 }
+
+@media screen and (max-width: 640px) {
+
+	p.words {
+		font-size: 3rem !important;
+	}
+
+	p.mobile {
+		font-size: 3rem !important;
+	}
+
+
+}
