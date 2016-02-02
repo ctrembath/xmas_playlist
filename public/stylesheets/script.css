@@ -384,6 +384,10 @@ p.weekend-words {
 		font-size: 5rem !important;
 	}
 
+	p.wednesday-words {
+		font-size: 3.8rem !important;
+	}
+
 	.Logo {
 		height: 2rem;
 	}
