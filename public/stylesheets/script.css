@@ -393,6 +393,10 @@ p.weekend-words {
 		letter-spacing: 0;
 	}
 
+	p.friday-words {
+		letter-spacing: .8rem;
+		font-size: 7rem !important;
+	}
 
 	.Logo {
 		height: 2rem;
@@ -401,21 +405,4 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
-}
-
-@media screen and (max-width: 640px) {
-
-	p.friday-words {
-		letter-spacing: .8rem;
-		font-size: 7rem !important;
-	}
-	p.words {
-		font-size: 3rem !important;
-	}
-
-	p.mobile {
-		font-size: 3rem !important;
-	}
-
-
 }
