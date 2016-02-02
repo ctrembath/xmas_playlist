@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $("#cover").show(0).delay(3000).fadeOut("slow");
+
   // Letter glows if playing
 
   $(".words").click(function(){
