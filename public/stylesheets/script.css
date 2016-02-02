@@ -394,8 +394,8 @@ p.weekend-words {
 	}
 
 	p.friday-words {
-		letter-spacing: .5rem;
-		font: 7rem !important;
+		letter-spacing: .8rem;
+		font-size: 7rem !important;
 	}
 
 	.Logo {
