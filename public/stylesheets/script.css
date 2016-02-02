@@ -337,7 +337,7 @@ p.weekend-words {
 		clear: both;
 	}
 
-	.infoButton{
+	.infoButton {
 		margin-top: 1rem !important;
 		height: 1.5rem;
 		margin-right: 0rem;
@@ -385,11 +385,11 @@ p.weekend-words {
 	}
 
 	p.wednesday-words {
-		font-size: 3.8rem !important;
+		font-size: 3.4rem !important;
 	}
 
 	p.thursday-words {
-		font-size: 3.8rem !important;		
+		font-size: 3.4rem !important;		
 		letter-spacing: 0;
 	}
 
@@ -399,7 +399,7 @@ p.weekend-words {
 	}
 
 	p.weekend-words {
-		font-size: 3.8rem !important;
+		font-size: 3.4rem !important;
 	}
 
 	.Logo {
@@ -409,12 +409,4 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
-}
-
-@media screen and (max-width: 500px) {
-
-	p.words {
-		font-size: 3rem !important;
-	}
-
 }
