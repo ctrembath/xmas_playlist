@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // CURRENT PLAYLIST - NO MAYO
+
   soundManager.setup({
     
     url: './swf',
