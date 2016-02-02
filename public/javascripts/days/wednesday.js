@@ -75,6 +75,42 @@ $(document).ready(function() {
       });
 
       // VIBES LINE
+
+      $('#v-w').click(function() {
+        var trackID = '244233941';
+        var tune = event.target;
+        soundmanagerCreate(trackID);
+        play(tune, trackID, 'RYAN Playground - Are You Mad', 'i-w');
+      });
+
+      $('#i-w').click(function() {
+        var trackID = '240654811';
+        var tune = event.target;
+        soundmanagerCreate(trackID);
+        play(tune, trackID, 'HONNE - Gone Are The Days (SOHN Remix)', 'b-w');
+      });
+
+      $('#b-w').click(function() {
+        var trackID = '243255972';
+        var tune = event.target;
+        soundmanagerCreate(trackID);
+        play(tune, trackID, 'Dillistone - Sad & High', 'eee-w');
+      });
+
+      $('#eee-w').click(function() {
+        var trackID = '243255972';
+        var tune = event.target;
+        soundmanagerCreate(trackID);
+        play(tune, trackID, 'Kali Uchis - Ridin Round Ft. Tory Lanez (Oshi Redo)', 'ss-w');
+      });
+
+      $('#ss-w').click(function() {
+        var trackID = '222754027';
+        var tune = event.target;
+        soundmanagerCreate(trackID);
+        play(tune, trackID, 'Kenton Slash Demon - Syko', 'w-w');
+      });
+
     }
 
   })
