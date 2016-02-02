@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("#cover").show(0).delay(3000).fadeOut("slow");
+  $("#cover").show(0).delay(3200).fadeOut("slow");
 
   // Letter glows if playing
 
@@ -59,6 +59,10 @@ var soundmanagerPlay = function(trackID, nextLetter) {
 var trackInfo = function(trackName) {
   var infoBanner = document.getElementById('artist-info');
   infoBanner.innerHTML = trackName;
+};
+
+var resetMarquee = function(marquee) {
+  marquee.stop();
 };
 
 // Play and pause tracks in top line letters
