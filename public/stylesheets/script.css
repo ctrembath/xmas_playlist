@@ -278,7 +278,7 @@ p.weekend-words {
 	font-size: 10rem;
 	color: #88dffc;
 	opacity: .5;
-	font-family: 'Averia Serif Libre', cursive;, serif;
+	font-family: 'Averia Serif Libre', serif;
 	font-weight: 300;
 	text-shadow: 1px 1px 5px #ff4800;
 }
@@ -370,7 +370,7 @@ p.weekend-words {
 	}
 
 	p.mobile {
-		font-size: 4.7rem !important;
+		font-size: 5rem !important;
 	}
 }
 
