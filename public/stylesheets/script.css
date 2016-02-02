@@ -377,7 +377,7 @@ p.weekend-words {
 @media screen and (max-width: 650px) {
 	
 	p.words {
-		font-size: 4rem !important;
+		font-size: 5rem !important;
 	}
 
 	p.mobile {
