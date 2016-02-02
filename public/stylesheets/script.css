@@ -398,6 +398,10 @@ p.weekend-words {
 		font-size: 7rem !important;
 	}
 
+	p.weekend-words {
+		font-size: 3.8rem !important;
+	}
+
 	.Logo {
 		height: 2rem;
 	}
@@ -405,4 +409,12 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
+}
+
+@media screen and (max-width: 600px) {
+
+	p.words {
+		font-size: 3rem !important;
+	}
+
 }
