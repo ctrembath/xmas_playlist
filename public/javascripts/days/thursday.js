@@ -87,14 +87,14 @@ $(document).ready(function() {
       });
 
       $('#e-th').click(function() {
-        var trackID = '116385682';
+        var trackID = '227142468';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Fickle Friends - Say No More', 'ss-th');
       });
 
       $('#ss-th').click(function() {
-        var trackID = '227142468';
+        var trackID = '243221766';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Tom Misch & Carmody - Easy Love', 't-th');
