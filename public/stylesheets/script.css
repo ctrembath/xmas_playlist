@@ -184,7 +184,7 @@ p.tuesday-words:hover {
 	opacity: 1;
 }
 
-#blacki {
+.blacki {
 	-webkit-filter: invert(.8);
 	filter: invert(.8);
 }
@@ -227,10 +227,9 @@ p.thursday-words {
 	display: inline;
 	font-size: 10rem;
 	font-family: 'Roboto', serif;
-	color: #00ffc3;
 	font-weight: 100;
 	letter-spacing: .5rem;
-	text-shadow: 1px 1px 5px black;
+	text-shadow: 3px 3px 8px #00ffc3, 0px 0px 20px #00ffc3;
 	border-radius: 50%;
   transition: transform .8s ease-in-out;
   -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -239,8 +238,9 @@ p.thursday-words {
 p.thursday-words:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
-  color: black;
-	text-shadow: 1px 1px 8px #00ffc3;
+	color: #00ffc3;
+	text-shadow: 1px 1px 8px black;
+
 
 }
 
