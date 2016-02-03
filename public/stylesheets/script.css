@@ -402,6 +402,10 @@ p.weekend-words {
 		font-size: 7rem !important;
 	}
 
+	.tuesdayspacingTop {
+		padding-top: 1rem;
+	}
+
 	p.weekend-words {
 		font-size: 3.4rem !important;
 	}
