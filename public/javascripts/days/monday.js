@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // CURRENT PLAYLIST - NO MAYO & JUICEBOX
+
   soundManager.setup({
     
     url: './swf',
@@ -87,7 +89,7 @@ $(document).ready(function() {
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Luke Mahony Hammond - DRIFT');
       });
-    },
+    }
   });
 });
 

@@ -326,6 +326,10 @@ p.weekend-words {
 	.xmas {
 		font-size: 8rem !important;
 	}
+
+	.tuesdayspacingTop {
+		padding-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 780px) {
@@ -337,7 +341,7 @@ p.weekend-words {
 		clear: both;
 	}
 
-	.infoButton{
+	.infoButton {
 		margin-top: 1rem !important;
 		height: 1.5rem;
 		margin-right: 0rem;
@@ -374,7 +378,7 @@ p.weekend-words {
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
 	
 	p.words {
 		font-size: 5.4rem !important;
@@ -385,11 +389,11 @@ p.weekend-words {
 	}
 
 	p.wednesday-words {
-		font-size: 3.8rem !important;
+		font-size: 3.4rem !important;
 	}
 
 	p.thursday-words {
-		font-size: 3.8rem !important;		
+		font-size: 3.4rem !important;		
 		letter-spacing: 0;
 	}
 
@@ -398,8 +402,12 @@ p.weekend-words {
 		font-size: 7rem !important;
 	}
 
+	.tuesdayspacingTop {
+		padding-top: 1rem;
+	}
+
 	p.weekend-words {
-		font-size: 3.8rem !important;
+		font-size: 3.4rem !important;
 	}
 
 	.Logo {
@@ -409,12 +417,4 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
-}
-
-@media screen and (max-width: 600px) {
-
-	p.words {
-		font-size: 3rem !important;
-	}
-
 }
