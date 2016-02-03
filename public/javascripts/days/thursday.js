@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     onready: function() {
 
-       $('#t-th').click(function() {
+      $('#t-th').click(function() {
         var trackID = '244093167';
         var tune = event.target;
         soundmanagerCreate(trackID);
@@ -15,49 +15,49 @@ $(document).ready(function() {
       });
 
       $('#h-th').click(function() {
-        var trackID = '118894880';
+        var trackID = '9485876';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Florence + The Machine - You’ve Got The Love (Jamie XX Remix)', 'u-th');
       });
 
       $('#u-th').click(function() {
-        var trackID = '1688282';
+        var trackID = '237629538';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Ricky Blaze - Apart Ft. Alexus Rose', 'r-th');
       });
 
       $('#r-th').click(function() {
-        var trackID = '73799584';
+        var trackID = '176237086';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Oh Wonder - Body Gold (Louis The Child Remix)', 's-th');
       });
 
       $('#s-th').click(function() {
-        var trackID = '154829271';
+        var trackID = '87257862';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Jah9 - Avocado', 'd-th');
       });
 
       $('#d-th').click(function() {
-        var trackID = '70430214';
+        var trackID = '188189839';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'The Other Side - Public Service Broadcasting', 'a-th');
       });
 
 			$('#a-th').click(function() {
-				var trackID = '210606695';
+				var trackID = '237101589';
 				var tune = event.target;
 				soundmanagerCreate(trackID);
 				play(tune, trackID, 'flybear - The Hook', 'y-th');
 			});
 
       $('#y-th').click(function() {
-        var trackID = '210606695';
+        var trackID = '242970980';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Alex Shulz - Never Forget You (Remix)', 'v-th');
@@ -66,21 +66,21 @@ $(document).ready(function() {
       // VIBES LINE
 
       $('#v-th').click(function() {
-        var trackID = '201557891';
+        var trackID = '142431336';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'MØ - Don’t Wanna Dance (Goldroom Remix)', 'i-th');
       });
 
       $('#i-th').click(function() {
-        var trackID = '210633688';
+        var trackID = '216542711';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Hayden James - Something About You (ODESZA Remix)', 'b-th');
       });
 
       $('#b-th').click(function() {
-        var trackID = '237101589';
+        var trackID = '234966710';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Astronomyy - Ocean Eyes (Astronomyy Edit)', 'e-th');
@@ -94,13 +94,11 @@ $(document).ready(function() {
       });
 
       $('#ss-th').click(function() {
-        var trackID = '237386464';
+        var trackID = '227142468';
         var tune = event.target;
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Tom Misch & Carmody - Easy Love', 't-th');
       });
-    }
-  })// TOP LINE THURSDAY
 
     }
 
