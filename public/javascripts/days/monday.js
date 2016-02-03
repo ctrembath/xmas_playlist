@@ -14,6 +14,8 @@ $(document).ready(function() {
       $('#c').click(function() {
         var trackID = '235758881';
         var tune = event.target;
+        console.log(document.getElementById('c').name);
+        console.log('***********');
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Ray BLK - 50/50', 'h');
       });
