@@ -100,10 +100,6 @@ $(document).ready(function() {
         play(tune, trackID, 'Tom Misch & Carmody - Easy Love', 't-th');
       });
     }
-  })// TOP LINE THURSDAY
-
-    }
-
   })
 
 });
