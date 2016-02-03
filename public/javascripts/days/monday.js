@@ -42,10 +42,10 @@ $(document).ready(function() {
       });
 
       $('#s1').click(function() {
-        var trackID = '235427283';
+        var trackID = '200083292';
         var tune = event.target;
         soundmanagerCreate(trackID);
-        play(tune, trackID, 'LOYAL - Blue and the Green', 't');
+        play(tune, trackID, 'Mura Masa - Lovesick Fuck', 't');
       });
 
       $('#t').click(function() {
@@ -72,10 +72,10 @@ $(document).ready(function() {
       });
 
       $('#r1').click(function() {
-        var trackID = '226404391';       
+        var trackID = '218904197';       
         var tune = event.target;
         soundmanagerCreate(trackID);
-        play(tune, trackID, 'Camel Power Club - Ourson', 'r2');
+        play(tune, trackID, 'Kenton Slash Demon - Harpe', 'r2');
       });
 
       $('#r2').click(function() {
