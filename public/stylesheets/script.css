@@ -326,6 +326,10 @@ p.weekend-words {
 	.xmas {
 		font-size: 8rem !important;
 	}
+
+	.tuesdayspacingTop {
+		padding-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 780px) {
