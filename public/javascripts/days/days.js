@@ -8,7 +8,7 @@ $(document).ready(function() {
     onready: function() {
 
       // MONDAY - CURRENT - NO MAYO & JUICEBOX
-      // FRIDAY - CURRENT - ELLA
+      // & FRIDAY - CURRENT - ELLA
       
       $('#c, #h, #r3, #i, #s1, #t, #m1, #e, #r1, #r2, #y').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
@@ -41,6 +41,16 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
+      // THURSDAY - CURRENT - JALADA
+
+      $('#t-th, #h-th, #u-th, #r-th, #s-th, #d-th, #a-th, #y-th, #v-th, #i-th, #b-th, #e-th, #ss-th').click(function() {
+        var id = document.getElementById(this.id).attributes.name.value;
+        var info = document.getElementById(this.id).attributes.title.value;
+        var next = document.getElementById(this.id).attributes.value.value;
+
+        soundmanagerCreate(id);
+        play(this, id, info, next);
+      });
     }
   });
 });
