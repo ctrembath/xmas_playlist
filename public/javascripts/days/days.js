@@ -8,6 +8,7 @@ $(document).ready(function() {
     onready: function() {
 
       // MONDAY - CURRENT - NO MAYO & JUICEBOX
+      // FRIDAY - CURRENT - ELLA
       
       $('#c, #h, #r3, #i, #s1, #t, #m1, #e, #r1, #r2, #y').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
@@ -18,17 +19,16 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // FRIDAY - CURRENT - ELLA
+      // TUESDAY - CURRENT - NO MAYO
 
-      // $('#f-fri, #r-fri, #i-fri, #d-fri, #a-fri, #y-fri, #v-fri, #ii-fri, #b-fri, #e-fri, #s-fri').click(function() {
-      //   var id = document.getElementById(this.id).attributes.name.value;
-      //   var info = document.getElementById(this.id).attributes.title.value;
-      //   var next = document.getElementById(this.id).attributes.value.value;
+      $('#t-tues, #u-tues, #e-tues, #s-tues, #d-tues, #a-tues, #y-tues, #v-tues, #i-tues, #b-tues, #ee-tues, #ss-tues').click(function() {
+        var id = document.getElementById(this.id).attributes.name.value;
+        var info = document.getElementById(this.id).attributes.title.value;
+        var next = document.getElementById(this.id).attributes.value.value;
 
-      //   soundmanagerCreate(id);
-      //   play(this, id, info, next);
-      // });
-
+        soundmanagerCreate(id);
+        play(this, id, info, next);
+      });
     }
   });
 });
