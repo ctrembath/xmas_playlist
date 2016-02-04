@@ -170,7 +170,8 @@ p.monday-words:hover {
 /*Tuesday*/
 
 .tuesday {
-	background: url(../images/tuesday.gif);
+	/*background: url(../images/tuesday.gif);*/
+	background: url(https://s3.amazonaws.com/vibes-assets/tuesday.gif);
 	background-position: center;
 }
 
@@ -269,7 +270,8 @@ p.friday-words {
 /*Weekend*/
 
 .weekend {
-	background: url(../images/sunday.gif) no-repeat center center fixed;
+	/*background: url(../images/sunday.gif) no-repeat center center fixed;*/
+	background: url(https://s3.amazonaws.com/vibes-assets/sunday.gif) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
