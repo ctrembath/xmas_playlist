@@ -99,9 +99,6 @@ $(document).ready(function() {
         soundmanagerCreate(trackID);
         play(tune, trackID, 'Tom Misch & Carmody - Easy Love', 't-th');
       });
-
     }
-
   })
-
 });

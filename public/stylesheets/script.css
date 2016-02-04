@@ -216,7 +216,8 @@ p.wednesday-words {
 /*Thursday*/
 
 .thursday {
-	background: #65fbbf url(../images/thursday.gif) no-repeat center center fixed;
+	/*background: #65fbbf url(../images/thursday.gif) no-repeat center center fixed;*/
+	background: #65fbbf url(https://s3.amazonaws.com/vibes-assets/thursday+copy.gif) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
