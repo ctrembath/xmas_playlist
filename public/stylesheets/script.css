@@ -139,7 +139,8 @@ a.companyLinks {
 /*Monday*/
 
 .monday {
-	background: url(../images/background2.gif) no-repeat center center fixed;
+	/*background: url(../images/background2.gif) no-repeat center center fixed;*/
+	background: url(https://s3.amazonaws.com/vibes-assets/monday.gif) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -248,7 +249,8 @@ p.thursday-words:hover {
 /*Friday*/
 
 .friday {
-	background: url(../images/friday.gif) no-repeat center center fixed;
+	/*background: url(../images/friday.gif) no-repeat center center fixed;*/
+	background: url(https://s3.amazonaws.com/vibes-assets/friday.gif) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -311,10 +313,6 @@ p.weekend-words {
 }
 
 @media screen and (max-width: 1230px) {
-
-	.xmas {
-		font-size: 12rem !important;
-	}
 
 	.spacingTop {
 		margin-top: 2rem; 
