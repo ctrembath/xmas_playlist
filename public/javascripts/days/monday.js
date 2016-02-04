@@ -20,14 +20,14 @@ $(document).ready(function() {
 
       // FRIDAY - CURRENT - ELLA
 
-      $('#f-fri, #r-fri, #i-fri, #d-fri, #a-fri, #y-fri, #v-fri, #ii-fri, #b-fri, #e-fri, #s-fri').click(function() {
-        var id = document.getElementById(this.id).attributes.name.value;
-        var info = document.getElementById(this.id).attributes.title.value;
-        var next = document.getElementById(this.id).attributes.value.value;
+      // $('#f-fri, #r-fri, #i-fri, #d-fri, #a-fri, #y-fri, #v-fri, #ii-fri, #b-fri, #e-fri, #s-fri').click(function() {
+      //   var id = document.getElementById(this.id).attributes.name.value;
+      //   var info = document.getElementById(this.id).attributes.title.value;
+      //   var next = document.getElementById(this.id).attributes.value.value;
 
-        soundmanagerCreate(id);
-        play(this, id, info, next);
-      });
+      //   soundmanagerCreate(id);
+      //   play(this, id, info, next);
+      // });
 
     }
   });
