@@ -231,18 +231,6 @@ p.thursday-words {
 	font-weight: 100;
 	letter-spacing: .5rem;
 	text-shadow: 3px 3px 8px #00ffc3, 0px 0px 20px #00ffc3;
-	border-radius: 50%;
-  transition: transform .8s ease-in-out;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
- }
-
-p.thursday-words:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-	color: #00ffc3;
-	text-shadow: 1px 1px 8px black;
-
-
 }
 
 /*Friday*/
@@ -311,10 +299,6 @@ p.weekend-words {
 }
 
 @media screen and (max-width: 1230px) {
-
-	.xmas {
-		font-size: 12rem !important;
-	}
 
 	.spacingTop {
 		margin-top: 2rem; 
