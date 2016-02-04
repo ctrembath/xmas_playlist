@@ -17,6 +17,9 @@ $(document).ready(function() {
         soundmanagerCreate(id);
         play(this, id, info, next);
       });
+
+      // FRIDAY - CURRENT - ELLA
+
     }
   });
 });
