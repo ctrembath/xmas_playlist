@@ -271,10 +271,9 @@ p.weekend-words {
 	text-shadow: 1px 1px 5px #ff4800;
 }
 
-
-#w-wee, #e4-wee, #k-wee {
-	color: #ff4800;
-	text-shadow: 1px 1px 5px #88dffc;
+.orangeweekend {
+	color: #ff4800 !important;
+	text-shadow: 1px 1px 5px #88dffc !important;
 }
 
 .mobileChristmas {
