@@ -1,25 +1,3 @@
-$(document).ready(function() {
-
-  $("#cover").show(0).delay(3000).fadeOut("slow");
-
-  // Letter glows if playing
-
-  $(".words").click(function(){
-    $('.words').not(this).removeClass('playing');
-    $(this).toggleClass('playing'); 
-  });
-
-  // Play instructions
-
-  $('.infoButton').click(function(){
-    $('#cover').show();
-  });
-
-  $('#cover').click(function(){
-     $('#cover').hide();
-  });
-});
-
 // Initialize Soundcloud and get stream url
 
 var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
