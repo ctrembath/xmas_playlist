@@ -20,6 +20,7 @@ $(document).ready(function() {
       });
 
       // TUESDAY - CURRENT - NO MAYO
+      // & WEEKEND - CURRENT - LUKE
 
       $('#t-tues, #u-tues, #e-tues, #s-tues, #d-tues, #a-tues, #y-tues, #v-tues, #i-tues, #b-tues, #ee-tues, #ss-tues').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
