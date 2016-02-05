@@ -158,9 +158,9 @@ p.monday-words:hover {
 	opacity: 1;
 }
 
-#m1, #m2, #i, #m3, #r1, #r3, #a2, #y, #a , #c, #s3 {
+/*#m1, #m2, #i, #m3, #r1, #r3, #a2, #y, #a , #c, #s3 {
 	color: #D4FCC3;
-}
+}*/
 
 #e, #t, #x, #h, #s1, #s2, #r2 {
 	color: #FFF5B2;
@@ -247,8 +247,8 @@ p.friday-words {
 	font-size: 16rem;
 	letter-spacing: 2rem;
 	font-family: 'Amatic SC', serif;
-	color: black;
-	text-shadow: 3px 3px 5px #4bfc00, 0px 0px 20px black;
+	color: black !important;
+	text-shadow: 3px 3px 5px #4bfc00, 0px 0px 20px black !important;
 }
 
 /*Weekend*/
