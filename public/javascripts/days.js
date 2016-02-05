@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+  $("#cover").show(0).delay(3000).fadeOut("slow");
+
+  // LETTERS GLOW & 'PLAYING' CLASS ADDED
+
+  $(".words").click(function(){
+    $('.words').not(this).removeClass('playing');
+    $(this).toggleClass('playing'); 
+  });
+
+  // PLAY INSTRUCTIONS
+
+  $('.infoButton').click(function(){
+    $('#cover').show();
+  });
+
+  $('#cover').click(function(){
+     $('#cover').hide();
+  });
+
+  // PLAYLISTS
+
   soundManager.setup({
     
     url: './swf',
