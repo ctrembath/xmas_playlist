@@ -30,7 +30,7 @@ var soundmanagerPlay = function(trackID, nextLetter) {
   soundManager.play(trackID, {
     onfinish: function() {
       $(nextTrack).click();
-    },
+    }
   });
   keyDown(nextTrack);
 };
@@ -69,8 +69,4 @@ var keyDown = function(next) {
     };
   });
 };
-
-
-
-
 
