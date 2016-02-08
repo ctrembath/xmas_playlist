@@ -15,7 +15,8 @@ var getURL = function(soundcloudTrackID) {
 // SoundManager create and play methods
 
 var soundmanagerCreate = function(trackID) {
-  trackURL = getURL(trackID)
+  var trackURL = getURL(trackID)
+  var trackID = 't' + trackID; // soundmanager trackID should start with non-numerical
   soundManager.createSound({
     id: trackID,
     url: trackURL
@@ -24,6 +25,7 @@ var soundmanagerCreate = function(trackID) {
 
 var soundmanagerPlay = function(trackID, nextLetter) {
   var nextTrack = document.getElementById(nextLetter);
+  var trackID = 't' + trackID;
   soundManager.pauseAll();
   soundManager.play(trackID, {
     onfinish: function() {
@@ -39,10 +41,6 @@ var trackInfo = function(trackName) {
   infoBanner.innerHTML = trackName;
 };
 
-var resetMarquee = function(marquee) {
-  marquee.stop();
-};
-
 // Play and pause tracks in top line letters
 
 var play = function(tune, soundmanagerTrackID, info, nextLetter) {
@@ -53,7 +51,8 @@ var play = function(tune, soundmanagerTrackID, info, nextLetter) {
     soundmanagerPlay(soundmanagerTrackID, nextLetter);
     trackInfo(info);
   } else {
-    soundManager.pause(soundmanagerTrackID);
+    var trackID = 't' + soundmanagerTrackID;
+    soundManager.pause(trackID);
     trackInfo('');
   };
 };
