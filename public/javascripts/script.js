@@ -29,9 +29,10 @@ var soundmanagerPlay = function(trackID, nextLetter) {
   soundManager.pauseAll();
   soundManager.play(trackID, {
     onfinish: function() {
-      nextTrack.click();
-    }
+      $(nextTrack).click();
+    },
   });
+  keyDown(nextTrack);
 };
 
 // Track Info
@@ -56,4 +57,20 @@ var play = function(tune, soundmanagerTrackID, info, nextLetter) {
     trackInfo('');
   };
 };
+
+// Key Press method for skipping tracks
+
+var keyDown = function(next) {
+  $(document).keydown(function(e) {
+    if (e.keyCode == 39) {
+      soundManager.pauseAll();
+      $(next).click();
+      return false;
+    };
+  });
+};
+
+
+
+
 
