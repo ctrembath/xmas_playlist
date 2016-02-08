@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   $(".words").click(function(){
     $('.words').not(this).removeClass('playing');
-    $(this).toggleClass('playing'); 
+    $(this).toggleClass('playing');
   });
 
   // PLAY INSTRUCTIONS
