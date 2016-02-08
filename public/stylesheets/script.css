@@ -296,11 +296,21 @@ p.weekend-words {
   }
 }
 
+@media screen and (min-height: 720px) {
+
+	.spacingTop {
+		margin-top: .5rem; 
+		padding-top: .5rem;
+	}
+
+}
+
+
 @media screen and (max-width: 1230px) {
 
 	.spacingTop {
-		margin-top: 2rem; 
-		padding-top: 2.5rem;
+		margin-top: 1rem; 
+		padding-top: 1.5rem;
 	}
 }
 
@@ -361,6 +371,7 @@ p.weekend-words {
 	}
 }
 
+
 @media screen and (max-width: 750px) {
 	
 	p.words {
@@ -400,4 +411,16 @@ p.weekend-words {
 	.thankyou {
 		font-size: .9rem;
 	}
+
 }
+
+/*iphone 5*/
+
+@media screen and (device-aspect-ratio: 40/71) {
+
+	.spacingTop {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
