@@ -173,6 +173,11 @@ p.monday-words:hover {
 	background-position: center;
 }
 
+.tuesday-spacingTop {
+	margin-top: 1rem; 
+	padding-top: 1.5rem;
+}
+
 p.tuesday-words {
 	display: inline;
 	font-size: 15rem;
