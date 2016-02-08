@@ -296,14 +296,6 @@ p.weekend-words {
   }
 }
 
-@media screen and (min-height: 720px) {
-
-	.spacingTop {
-		margin-top: .5rem; 
-		padding-top: .5rem;
-	}
-
-}
 
 
 @media screen and (max-width: 1230px) {
@@ -325,6 +317,24 @@ p.weekend-words {
 	}
 }
 
+@media screen and (max-height: 750px) {
+
+	.spacingTop {
+		margin-top: .5rem; 
+		padding-top: 3rem;
+	}
+
+	p.friday-words {
+		font-size: 14rem;
+	}
+
+	p.tuesday-words {
+		font-size: 13.5rem;
+	}
+
+
+
+}
 @media screen and (max-width: 780px) {
 
 	.merry {
