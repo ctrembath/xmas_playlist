@@ -32,7 +32,7 @@ var soundmanagerPlay = function(trackID, nextLetter) {
       $(nextTrack).click();
     }
   });
-  keyDown(nextTrack);
+  // keyDown(nextTrack);
 };
 
 // Track Info
@@ -60,13 +60,13 @@ var play = function(tune, soundmanagerTrackID, info, nextLetter) {
 
 // Key Press method for skipping tracks
 
-var keyDown = function(next) {
-  $(document).keydown(function(e) {
-    if (e.keyCode == 39) {
-      soundManager.pauseAll();
-      $(next).click();
-      return false;
-    };
-  });
-};
+// var keyDown = function(next) {
+//   $(document).keydown(function(e) {
+//     if (e.keyCode == 39) {
+//       soundManager.pauseAll();
+//       $(next).click();
+//       return false;
+//     };
+//   });
+// };
 
