@@ -194,6 +194,11 @@ p.tuesday-words:hover {
 	filter: invert(.8);
 }
 
+.darby {
+	color: black !important;
+	padding-left: 1rem;
+}
+
 /*Wednesday*/
 
 .wednesday {
