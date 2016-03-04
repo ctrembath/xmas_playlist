@@ -19,6 +19,8 @@ $(document).ready(function() {
      $('#cover').hide();
   });
 
+  listTracks('192861560');
+
   // PLAYLISTS
 
   soundManager.setup({
@@ -28,7 +30,7 @@ $(document).ready(function() {
 
     onready: function() {
 
-      // MONDAY - CURRENT - NO MAYO & JUICEBOX
+      // MONDAY - CURRENT - JOE HERTZ
       // & FRIDAY - CURRENT - ELLA
       
       $('#c, #h, #r3, #i, #s1, #t, #m1, #e, #r1, #r2, #y').click(function() {
@@ -40,8 +42,8 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // TUESDAY - CURRENT - NO MAYO
-      // & WEEKEND - CURRENT - LUKE
+      // TUESDAY - CURRENT - DARBY
+      // & WEEKEND - CURRENT - FRED
 
       $('#t-tues, #u-tues, #e-tues, #s-tues, #d-tues, #a-tues, #y-tues, #v-tues, #i-tues, #b-tues, #ee-tues, #ss-tues').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;

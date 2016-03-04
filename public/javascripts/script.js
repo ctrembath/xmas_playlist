@@ -12,6 +12,12 @@ var getURL = function(soundcloudTrackID) {
   return 'https://api.soundcloud.com/tracks/' + soundcloudTrackID + '/stream?client_id=' + soundcloudClientID;
 };
 
+// Soundcloud tracks in playlist
+
+var listTracks = function(playlistID) {
+  console.log('http://api.soundcloud.com/playlists/' + playlistID + '?client_id=' + soundcloudClientID);
+};
+
 // SoundManager create and play methods
 
 var soundmanagerCreate = function(trackID) {
