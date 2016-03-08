@@ -54,7 +54,7 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // WEDNESDAY - CURRENT - DARBY
+      // WEDNESDAY - CURRENT - HARRY
 
       $('#w-w, #e-w, #d-w, #n-w, #ee-w, #s-w, #dd-w, #a-w, #y-w, #v-w, #i-w, #b-w, #eee-w, #ss-w').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
