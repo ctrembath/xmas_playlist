@@ -310,7 +310,9 @@ ul {
 	list-style-type: none;
 }
 
-
+#admin-header {
+	text-align: center;
+}
 
 @media screen and (max-width: 1230px) {
 

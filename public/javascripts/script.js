@@ -10,7 +10,8 @@ var initializeSoundcloud = function() {
 };
 
 var getURL = function(soundcloudTrackID) {
-  return 'https://api.soundcloud.com/tracks/' + soundcloudTrackID + '/stream?client_id=' + soundcloudClientID;
+  var url = 'https://api.soundcloud.com/tracks/' + soundcloudTrackID + '/stream?client_id=' + soundcloudClientID;
+  return url;
 };
 
 // Soundcloud tracks in playlist
@@ -20,10 +21,13 @@ var listTracks = function(playlistID) {
   SC.get('/playlists/' + playlistID).then(function(playlist) {
     playlist.tracks.forEach(function(track) {
       allDetails.push(track.user.username + ' : ' + track.title + ' : ' + 'Id = ' + track.id);
+      console.log(track.streamable);
     });
     document.getElementById('masterList').appendChild(makeList(allDetails));
   });
 };
+
+// NOTE - if the track doesn't play - it is streamable false and needs to be caught
 
 var makeList = function(array) {
   var list = document.createElement('ul');
