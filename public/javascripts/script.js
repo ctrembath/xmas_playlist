@@ -1,6 +1,10 @@
 // Initialize Soundcloud and get stream url
 
 var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
+// var trackUsers = [];
+// var trackNames = [];
+// var trackIDs = [];
+var allDetails = [];
 
 var initializeSoundcloud = function() {
   SC.initialize({
@@ -15,8 +19,34 @@ var getURL = function(soundcloudTrackID) {
 // Soundcloud tracks in playlist
 
 var listTracks = function(playlistID) {
-  console.log('http://api.soundcloud.com/playlists/' + playlistID + '?client_id=' + soundcloudClientID);
+  initializeSoundcloud();
+  SC.get('/playlists/' + playlistID).then(function(playlist) {
+    playlist.tracks.forEach(function(track) {
+      // trackNames.push(track.title);
+      // trackUsers.push(track.user.username);
+      // trackIDs.push(track.id);
+      allDetails.push(track.user.username + ' : ' + track.title + ' : ' + 'Id = ' + track.id);
+    });
+    // document.getElementById('usernameList').appendChild(makeList(trackUsers));
+    // document.getElementById('tracknameList').appendChild(makeList(trackNames));
+    // document.getElementById('trackidList').appendChild(makeList(trackIDs));
+    document.getElementById('masterList').appendChild(makeList(allDetails));
+  });
 };
+
+var makeList = function(array) {
+  var list = document.createElement('ul');
+  for (var i = 0; i < array.length; i++) {
+
+    var item = document.createElement('li');
+    item.appendChild(document.createTextNode(array[i]));
+    list.appendChild(item);
+
+  };
+  return list
+};
+
+
 
 // SoundManager create and play methods
 

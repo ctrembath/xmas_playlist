@@ -12,29 +12,28 @@ get '/monday' do
   erb :monday
 end
 
-
 get '/tuesday' do
   erb :tuesday
 end
-
 
 get '/wednesday' do
   erb :wednesday
 end
 
-
 get '/thursday' do
   erb :thursday
 end
-
 
 get '/friday' do
   erb :friday
 end
 
-
 get '/weekend' do
   erb :weekend
+end
+
+get '/admininfo' do
+  erb :info
 end
 
 private
