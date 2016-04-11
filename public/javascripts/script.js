@@ -2,6 +2,7 @@
 
 var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
 var allDetails = [];
+var letters = document.getElementsByClassName('tuesday-words');
 
 var initializeSoundcloud = function() {
   SC.initialize({
@@ -15,6 +16,7 @@ var getURL = function(soundcloudTrackID) {
 };
 
 // Soundcloud tracks in playlist
+// NOTE - if the track doesn't play - it is streamable false and needs to be caught
 
 var listTracks = function(playlistID) {
   initializeSoundcloud();
@@ -27,8 +29,6 @@ var listTracks = function(playlistID) {
   });
 };
 
-// NOTE - if the track doesn't play - it is streamable false and needs to be caught
-
 var makeList = function(array) {
   var list = document.createElement('ul');
   for (var i = 0; i < array.length; i++) {
@@ -37,6 +37,19 @@ var makeList = function(array) {
     list.appendChild(item);
   };
   return list
+};
+
+// Assign the HTML name attributes to be track id's 
+
+var updateTrackIds = function() {
+
+  for (var i = 0; i < letters.length; i++) {
+    console.log(letters[i].getAttribute('name'));
+    var name = letters[i].getAttribute('name');
+    console.log(typeof name);
+    letters[i].setAttribute("name", name);
+    console.log(letters[i].getAttribute("name"));
+  };
 };
 
 // SoundManager create and play methods
