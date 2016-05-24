@@ -2,7 +2,6 @@
 
 var soundcloudClientID = 'aa7a4eb3979426038d8aa53a458baa54';
 var allDetails = [];
-var letters = document.getElementsByClassName('tuesday-words');
 
 var initializeSoundcloud = function() {
   SC.initialize({
@@ -23,7 +22,6 @@ var listTracks = function(playlistID) {
   SC.get('/playlists/' + playlistID).then(function(playlist) {
     playlist.tracks.forEach(function(track) {
       allDetails.push(track.user.username + ' : ' + track.title + ' : ' + 'Id = ' + track.id);
-      console.log(track.streamable);
     });
     document.getElementById('masterList').appendChild(makeList(allDetails));
   });
@@ -39,16 +37,34 @@ var makeList = function(array) {
   return list
 };
 
-// Assign the HTML name attributes to be track id's 
+// Get wednesday track IDs
+
+var letters = document.getElementsByClassName('wednesday-words');
+var wednesdayIDs = [];
+
+var wednesday = function(playlistID) {
+  initializeSoundcloud();
+  SC.get('/playlists/' + playlistID).then(function(playlist) {
+    playlist.tracks.forEach(function(track) {
+      wednesdayIDs.push(track.id);
+    });
+  });
+};
+
+var updateWednesday = function() {
+  console.log(letters);
+  for (var i = 0; i < letters.length; i++) {
+    // console.log(letters[i]);
+  };
+}; 
+
+// Assign the HTML name attributes to be track id's - NOT BEING USED
 
 var updateTrackIds = function() {
 
   for (var i = 0; i < letters.length; i++) {
-    console.log(letters[i].getAttribute('name'));
     var name = letters[i].getAttribute('name');
-    console.log(typeof name);
     letters[i].setAttribute("name", name);
-    console.log(letters[i].getAttribute("name"));
   };
 };
 
@@ -72,7 +88,6 @@ var soundmanagerPlay = function(trackID, nextLetter) {
       $(nextTrack).click();
     }
   });
-  // keyDown(nextTrack);
 };
 
 // Track Info
@@ -98,15 +113,4 @@ var play = function(tune, soundmanagerTrackID, info, nextLetter) {
   };
 };
 
-// Key Press method for skipping tracks
-
-// var keyDown = function(next) {
-//   $(document).keydown(function(e) {
-//     if (e.keyCode == 39) {
-//       soundManager.pauseAll();
-//       $(next).click();
-//       return false;
-//     };
-//   });
-// };
 

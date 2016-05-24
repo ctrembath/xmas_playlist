@@ -19,8 +19,10 @@ $(document).ready(function() {
      $('#cover').hide();
   });
 
-  listTracks('192773616');
-  updateTrackIds();
+  listTracks('227646057');
+
+  wednesday();
+  updateWednesday();
 
   // PLAYLISTS
 
@@ -31,8 +33,8 @@ $(document).ready(function() {
 
     onready: function() {
 
-      // MONDAY - CURRENT - JOE HERTZ
-      // & FRIDAY - CURRENT - ELLA
+      // MONDAY 
+      // & FRIDAY 
       
       $('#c, #h, #r3, #i, #s1, #t, #m1, #e, #r1, #r2, #y').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
@@ -43,8 +45,8 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // TUESDAY - CURRENT - DARBY
-      // & WEEKEND - CURRENT - FRED
+      // TUESDAY
+      // & WEEKEND 
 
       $('#t-tues, #u-tues, #e-tues, #s-tues, #d-tues, #a-tues, #y-tues, #v-tues, #i-tues, #b-tues, #ee-tues, #ss-tues').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
@@ -55,7 +57,7 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // WEDNESDAY - CURRENT - HARRY
+      // WEDNESDAY
 
       $('#w-w, #e-w, #d-w, #n-w, #ee-w, #s-w, #dd-w, #a-w, #y-w, #v-w, #i-w, #b-w, #eee-w, #ss-w').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
@@ -66,7 +68,7 @@ $(document).ready(function() {
         play(this, id, info, next);
       });
 
-      // THURSDAY - CURRENT - JALADA
+      // THURSDAY
 
       $('#t-th, #h-th, #u-th, #r-th, #s-th, #d-th, #a-th, #y-th, #v-th, #i-th, #b-th, #e-th, #ss-th').click(function() {
         var id = document.getElementById(this.id).attributes.name.value;
