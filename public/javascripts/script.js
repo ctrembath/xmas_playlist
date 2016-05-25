@@ -37,7 +37,7 @@ var makeList = function(array) {
   return list
 };
 
-// Get wednesday track IDs
+// Get Wednesday track IDs
 
 var letters = document.getElementsByClassName('wednesday-words');
 var wednesdayIDs = [];
@@ -52,7 +52,7 @@ var wednesday = function(playlistID) {
 };
 
 var updateWednesday = function() {
-  console.log(letters);
+  console.log(letters.length);
   for (var i = 0; i < letters.length; i++) {
     // console.log(letters[i]);
   };
